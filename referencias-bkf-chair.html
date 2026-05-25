@@ -80,13 +80,21 @@
   @media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 700px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
   @media (max-width: 600px) {
-    .grid-auto, .grid-rings { grid-template-columns: 1fr; }
-    .container { padding: 16px; }
+    .grid-auto, .grid-rings, .grid-hooks { grid-template-columns: 1fr; }
+    .container { padding: 14px; }
     nav { padding: 0 10px; }
     nav a { padding: 12px 9px; font-size: 11px; }
-    .hero { padding: 28px 16px 20px; }
-    .hero h1 { font-size: 24px; }
-    .section-title { font-size: 18px; }
+    .hero { padding: 24px 14px 18px; }
+    .hero h1 { font-size: 22px; }
+    .section-title { font-size: 17px; }
+    .section-sub { font-size: 12px; }
+    .hook-text { font-size: 15px; }
+    .hook-why { font-size: 13px; }
+    .stat-number { font-size: 30px; }
+    .card { padding: 16px; }
+    .ig-card { padding: 14px; }
+    .ig-followers { font-size: 26px; }
+    section { margin-bottom: 48px; }
   }
 
   /* Stats */
@@ -140,9 +148,10 @@
   .hook-card.green { border-left-color: #34d399; }
   .hook-card.orange { border-left-color: #fb923c; }
   .hook-card.purple { border-left-color: #a78bfa; }
-  .hook-label { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; color: var(--muted); text-transform: uppercase; margin-bottom: 7px; }
-  .hook-text { font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 8px; }
-  .hook-why { font-size: 12px; color: #5a5462; line-height: 1.5; }
+  .hook-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 16px; font-weight: 700; line-height: 1.4; margin-bottom: 10px; }
+  .hook-why { font-size: 13px; color: #5a5462; line-height: 1.6; }
+  .grid-hooks { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin-bottom: 14px; }
 
   /* Divider */
   .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 44px 0; }
@@ -561,7 +570,7 @@
   <div class="section-title"><span>🪝</span> Hooks — Los Ganchos que Paran el Scroll</div>
   <div class="section-sub">Primeros 3 segundos del video o primera línea del copy — lo único que decide si el usuario para o pasa</div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+  <div class="grid-hooks">
     <div class="hook-card">
       <div class="hook-label">Frío · Ring 1 · Aspiración</div>
       <div class="hook-text">"Every corner of your apartment deserves a chair this good."</div>
@@ -657,7 +666,7 @@
       <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:#34d399;">+ $500</span></div>
       <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--muted);">Costo de la silla puesta en Greenville</span><span style="font-weight:700;color:#f87171;">– $300</span></div>
       <div style="display:flex;justify-content:space-between;padding:13px 0;border-bottom:2px solid rgba(240,160,48,0.3);font-size:16px;font-weight:800;"><span>Ganancia bruta</span><span style="color:var(--accent);">$200</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px 0;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;padding:18px 0;">
         <div style="background:rgba(52,211,153,0.06);border:1px solid rgba(52,211,153,0.2);border-radius:12px;padding:18px;text-align:center;">
           <div style="font-size:11px;font-weight:700;color:#34d399;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Manuel — 75%</div>
           <div style="font-size:44px;font-weight:900;color:#34d399;line-height:1;">$150</div>
