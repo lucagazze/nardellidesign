@@ -62,8 +62,24 @@
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
   @media (max-width: 1100px) { .grid-5 { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 900px) { .grid-3, .grid-5 { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 600px) { .grid-2, .grid-3, .grid-5 { grid-template-columns: 1fr; } .container { padding: 20px; } nav { padding: 0 16px; } .hero { padding: 32px 20px 24px; } }
+  @media (max-width: 900px) { .grid-3, .grid-5 { grid-template-columns: 1fr 1fr; } .adset-row { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } .do-dont { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .grid-2, .grid-3, .grid-5 { grid-template-columns: 1fr; }
+    .container { padding: 16px; }
+    nav { padding: 0 12px; }
+    nav a { padding: 12px 10px; font-size: 11px; }
+    .hero { padding: 28px 16px 20px; }
+    .hero h1 { font-size: 24px; }
+    .hero p { font-size: 13px; }
+    .stat-number { font-size: 26px; }
+    .hook-text { font-size: 14px; }
+    .ring-title { font-size: 14px; }
+    .bench-table th, .bench-table td { padding: 8px 10px; font-size: 12px; }
+    .camp-header h3 { font-size: 13px; }
+    .adset-row { grid-template-columns: 1fr; }
+    .section-title { font-size: 17px; }
+  }
 
   .stat-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
   .stat-number { font-size: 32px; font-weight: 800; background: linear-gradient(135deg, #C4882A, #e8b06a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 4px; }
@@ -520,34 +536,40 @@
 <!-- ═══════ FINANZAS ═══════ -->
 <section id="finanzas">
   <div class="section-title"><span>💰</span> Proyección Financiera</div>
-  <div class="section-sub">Números reales — qué entra, qué sale, qué queda</div>
+  <div class="section-sub">Cómo se reparten las ganancias — para que quede claro entre las dos partes</div>
 
-  <div class="grid-2" style="margin-bottom:20px;">
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — CPA $100</div>
-      <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:var(--win);">+ $500</span></div>
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Costo del producto</span><span style="font-weight:700;color:var(--lose);">– $300</span></div>
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">CPA (costo de adquisición)</span><span style="font-weight:700;color:var(--lose);">– $100</span></div>
-        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$100 / venta</span></div>
+  <!-- SPLIT EXPLICADO -->
+  <div class="card" style="margin-bottom:20px;border-color:rgba(196,136,42,0.3);">
+    <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Cómo funciona el split — por cada silla vendida</div>
+    <div style="display:flex;flex-direction:column;gap:0;">
+      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:var(--win);">$500</span></div>
+      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;"><span style="color:var(--muted);">Costo de la silla puesta en Greenville</span><span style="font-weight:700;color:var(--lose);">– $300</span></div>
+      <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:2px solid rgba(196,136,42,0.3);font-size:15px;font-weight:700;"><span>Ganancia bruta</span><span style="color:var(--accent);">$200</span></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px 0;">
+        <div style="background:rgba(74,222,128,0.06);border:1px solid rgba(74,222,128,0.2);border-radius:10px;padding:14px;text-align:center;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Manuel — 75%</div>
+          <div style="font-size:32px;font-weight:800;color:var(--win);">$150</div>
+          <div style="font-size:12px;color:#7a9a7a;margin-top:4px;">por silla vendida</div>
+        </div>
+        <div style="background:rgba(196,136,42,0.06);border:1px solid rgba(196,136,42,0.2);border-radius:10px;padding:14px;text-align:center;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Algoritmia — 25%</div>
+          <div style="font-size:32px;font-weight:800;color:var(--accent);">$50</div>
+          <div style="font-size:12px;color:#94856e;margin-top:4px;">por silla vendida</div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — CPA $60 (optimizado)</div>
-      <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:var(--win);">+ $500</span></div>
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Costo del producto</span><span style="font-weight:700;color:var(--lose);">– $300</span></div>
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">CPA (costo de adquisición)</span><span style="font-weight:700;color:var(--lose);">– $60</span></div>
-        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$140 / venta</span></div>
+      <div style="background:rgba(96,165,250,0.06);border:1px solid rgba(96,165,250,0.2);border-radius:8px;padding:12px 14px;font-size:13px;color:#8aadcc;">
+        <strong style="color:#60a5fa;">Ads:</strong> El costo de publicidad (Meta Ads) se descuenta de la ganancia bruta antes de hacer el split. Si el CPA es $100, la ganancia neta es $100 → Manuel $75 / Algoritmia $25.
       </div>
     </div>
   </div>
 
+  <!-- TABLA ESCENARIOS -->
   <div class="card">
     <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Proyección mensual — $70/día en ads ($2,100/mes)</div>
+    <div style="overflow-x:auto;">
     <table class="bench-table">
       <thead>
-        <tr><th>Escenario</th><th>Ventas/mes</th><th>Revenue bruto</th><th>Ganancia neta negocio</th><th>Algoritmia (25%)</th><th>Manuel (75%)</th></tr>
+        <tr><th>Escenario</th><th>Ventas/mes</th><th>Revenue</th><th>Ganancia neta</th><th>Algoritmia (25%)</th><th>Manuel (75%)</th></tr>
       </thead>
       <tbody>
         <tr><td>Conservador (CPA $100)</td><td>~21</td><td>~$10,500</td><td class="avg">~$2,100</td><td>~$525/mes</td><td>~$1,575/mes</td></tr>
@@ -555,7 +577,8 @@
         <tr><td>Optimizado (CPA $60)</td><td>~35</td><td>~$17,500</td><td class="good">~$4,900</td><td>~$1,225/mes</td><td>~$3,675/mes</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:12px;font-size:12px;color:var(--muted);">* ROAS mínimo breakeven: 2.5x. ROAS objetivo: 5–6x. Costo fijo: $300/silla puesto en Greenville.</div>
+    </div>
+    <div style="margin-top:12px;font-size:12px;color:var(--muted);">* Ganancia neta = Revenue – costo sillas – presupuesto ads. Split 25/75 sobre ese resultado.</div>
   </div>
 </section>
 
