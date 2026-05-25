@@ -3,17 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BKF Leather Chair — Plan Completo USA</title>
+<title>Nardelli Design — BKF Chair USA</title>
 <style>
   :root {
     --bg: #0a0805;
     --bg2: #120e08;
     --bg3: #1a1510;
     --accent: #C4882A;
-    --accent2: #8B5E2A;
-    --accent3: #4ade80;
-    --accent4: #60a5fa;
-    --accent5: #fb923c;
     --text: #e8ddd0;
     --muted: #7a6a55;
     --border: #1e1a14;
@@ -39,58 +35,19 @@
     background: radial-gradient(circle, rgba(196,136,42,0.12) 0%, transparent 70%);
     pointer-events: none;
   }
-  .hero h1 {
-    font-size: 34px;
-    font-weight: 800;
-    background: linear-gradient(135deg, #C4882A, #e8b06a, #8B5E2A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 8px;
-  }
+  .hero h1 { font-size: 34px; font-weight: 800; background: linear-gradient(135deg, #C4882A, #e8b06a, #8B5E2A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
   .hero p { color: #94856e; font-size: 15px; }
   .hero .meta { margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 12px;
-    border-radius: 999px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
+  .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
   .tag-gold { background: rgba(196,136,42,0.15); color: #C4882A; border: 1px solid rgba(196,136,42,0.3); }
   .tag-green { background: rgba(74,222,128,0.1); color: #4ade80; border: 1px solid rgba(74,222,128,0.25); }
   .tag-blue { background: rgba(96,165,250,0.1); color: #60a5fa; border: 1px solid rgba(96,165,250,0.25); }
   .tag-orange { background: rgba(251,146,60,0.1); color: #fb923c; border: 1px solid rgba(251,146,60,0.25); }
-  .tag-red { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
   .tag-muted { background: rgba(122,106,85,0.15); color: #7a6a55; border: 1px solid rgba(122,106,85,0.3); }
 
-  nav {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 0 40px;
-    display: flex;
-    gap: 4px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; position: sticky; top: 0; z-index: 100; }
   nav::-webkit-scrollbar { display: none; }
-  nav a {
-    color: var(--muted);
-    text-decoration: none;
-    padding: 14px 14px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    white-space: nowrap;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s;
-  }
+  nav a { color: var(--muted); text-decoration: none; padding: 14px 14px; font-size: 12px; font-weight: 600; letter-spacing: 0.4px; white-space: nowrap; border-bottom: 2px solid transparent; transition: all 0.2s; }
   nav a:hover { color: var(--text); border-bottom-color: var(--accent); }
 
   .container { max-width: 1300px; margin: 0 auto; padding: 40px; }
@@ -98,183 +55,111 @@
   .section-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
   .section-sub { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
 
-  .card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    transition: border-color 0.2s;
-  }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
   .card:hover { border-color: rgba(196,136,42,0.3); }
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  @media (max-width: 900px) { .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 600px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .container { padding: 20px; } }
+  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  @media (max-width: 1100px) { .grid-5 { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 900px) { .grid-3, .grid-5 { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .grid-2, .grid-3, .grid-5 { grid-template-columns: 1fr; } .container { padding: 20px; } nav { padding: 0 16px; } .hero { padding: 32px 20px 24px; } }
 
-  .stat-card {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-  }
-  .stat-number {
-    font-size: 34px;
-    font-weight: 800;
-    background: linear-gradient(135deg, #C4882A, #e8b06a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1;
-    margin-bottom: 4px;
-  }
+  .stat-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+  .stat-number { font-size: 32px; font-weight: 800; background: linear-gradient(135deg, #C4882A, #e8b06a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 4px; }
   .stat-label { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
   .stat-sub { font-size: 12px; color: #94856e; margin-top: 4px; }
 
   .bench-table { width: 100%; border-collapse: collapse; }
-  .bench-table th {
-    text-align: left;
-    padding: 10px 14px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--muted);
-    border-bottom: 1px solid var(--border);
-  }
-  .bench-table td { padding: 12px 14px; border-bottom: 1px solid rgba(30,26,20,0.7); font-size: 13px; vertical-align: middle; }
+  .bench-table th { text-align: left; padding: 10px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); }
+  .bench-table td { padding: 11px 14px; border-bottom: 1px solid rgba(30,26,20,0.7); font-size: 13px; vertical-align: middle; }
   .bench-table tr:last-child td { border-bottom: none; }
   .bench-table tr:hover td { background: rgba(196,136,42,0.04); }
   .good { color: var(--win); font-weight: 700; }
   .avg { color: var(--warn); font-weight: 700; }
-  .bad { color: var(--lose); font-weight: 700; }
 
-  .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .do-card { background: rgba(74,222,128,0.04); border: 1px solid rgba(74,222,128,0.2); border-radius: 12px; padding: 20px; }
-  .dont-card { background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.2); border-radius: 12px; padding: 20px; }
-  .do-card h3 { color: var(--win); font-size: 14px; margin-bottom: 14px; }
-  .dont-card h3 { color: var(--lose); font-size: 14px; margin-bottom: 14px; }
-  .do-list, .dont-list { list-style: none; }
-  .do-list li, .dont-list li { padding: 6px 0; font-size: 13px; color: #cbd5b8; display: flex; gap: 8px; align-items: flex-start; }
-  .do-list li::before { content: '✓'; color: var(--win); font-weight: 700; flex-shrink: 0; }
-  .dont-list li::before { content: '✗'; color: var(--lose); font-weight: 700; flex-shrink: 0; }
+  .price-premium { background: rgba(196,136,42,0.15); color: #C4882A; border: 1px solid rgba(196,136,42,0.3); display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .price-mid { background: rgba(96,165,250,0.1); color: #60a5fa; border: 1px solid rgba(96,165,250,0.25); display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .price-budget { background: rgba(122,106,85,0.15); color: #7a6a55; border: 1px solid rgba(122,106,85,0.3); display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .price-luxury { background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.25); display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+  .price-us { background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.25); display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
 
   .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 40px 0; }
 
-  .hook-card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    border-left: 3px solid var(--accent);
-  }
-  .hook-card.green { border-left-color: var(--accent3); }
-  .hook-card.blue { border-left-color: var(--accent4); }
-  .hook-card.orange { border-left-color: var(--accent5); }
-  .hook-number { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin-bottom: 8px; }
-  .hook-text { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 10px; line-height: 1.3; font-style: italic; }
-  .hook-desc { font-size: 13px; color: #94856e; }
+  /* Ring cards */
+  .ring-card { border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .ring-badge { font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
+  .ring-title { font-size: 15px; font-weight: 800; }
+  .ring-role { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .ring-example { font-size: 12px; line-height: 1.6; border-radius: 8px; padding: 10px 12px; font-style: italic; }
 
+  /* Hooks */
+  .hook-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; border-left: 3px solid var(--accent); }
+  .hook-card.blue { border-left-color: #60a5fa; }
+  .hook-card.green { border-left-color: #4ade80; }
+  .hook-card.orange { border-left-color: #fb923c; }
+  .hook-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin-bottom: 6px; }
+  .hook-text { font-size: 16px; font-weight: 700; line-height: 1.3; font-style: italic; }
+
+  /* Campaign */
   .camp-block { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
-  .camp-header {
-    padding: 14px 20px;
-    background: linear-gradient(90deg, rgba(196,136,42,0.1), transparent);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+  .camp-header { padding: 14px 20px; background: linear-gradient(90deg, rgba(196,136,42,0.1), transparent); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
   .camp-header h3 { font-size: 15px; font-weight: 700; }
-  .camp-header .budget { margin-left: auto; font-size: 12px; font-weight: 700; color: var(--accent3); background: rgba(74,222,128,0.1); padding: 3px 10px; border-radius: 999px; border: 1px solid rgba(74,222,128,0.2); }
+  .camp-header .budget { margin-left: auto; font-size: 12px; font-weight: 700; color: #4ade80; background: rgba(74,222,128,0.1); padding: 3px 10px; border-radius: 999px; border: 1px solid rgba(74,222,128,0.2); }
   .camp-body { padding: 16px 20px; }
-  .adset-row { display: grid; grid-template-columns: 180px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(30,26,20,0.5); align-items: start; }
+  .adset-row { display: grid; grid-template-columns: 160px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(30,26,20,0.5); align-items: start; }
   .adset-row:last-child { border-bottom: none; }
-  .adset-name { font-size: 13px; font-weight: 700; color: var(--accent4); }
+  .adset-name { font-size: 13px; font-weight: 700; color: #60a5fa; }
   .adset-pain { font-size: 11px; color: var(--muted); margin-top: 2px; }
   .creative-list { display: flex; flex-wrap: wrap; gap: 6px; }
-  .creative-pill { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 8px; font-size: 11px; font-weight: 600; }
-  .cp-n1 { background: rgba(196,136,42,0.12); color: #C4882A; border: 1px solid rgba(196,136,42,0.25); }
-  .cp-n2 { background: rgba(139,94,42,0.12); color: #c4945a; border: 1px solid rgba(139,94,42,0.25); }
-  .cp-n3 { background: rgba(74,222,128,0.1); color: #4ade80; border: 1px solid rgba(74,222,128,0.2); }
-  .cp-n4 { background: rgba(96,165,250,0.1); color: #60a5fa; border: 1px solid rgba(96,165,250,0.2); }
-  .cp-n5 { background: rgba(251,146,60,0.1); color: #fb923c; border: 1px solid rgba(251,146,60,0.2); }
+  .cp-ring { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+  .r1 { background: rgba(196,136,42,0.12); color: #C4882A; border: 1px solid rgba(196,136,42,0.25); }
+  .r2 { background: rgba(96,165,250,0.1); color: #60a5fa; border: 1px solid rgba(96,165,250,0.2); }
+  .r3 { background: rgba(74,222,128,0.1); color: #4ade80; border: 1px solid rgba(74,222,128,0.2); }
+  .r4 { background: rgba(251,146,60,0.1); color: #fb923c; border: 1px solid rgba(251,146,60,0.2); }
+  .r5 { background: rgba(167,139,250,0.1); color: #a78bfa; border: 1px solid rgba(167,139,250,0.2); }
 
-  .arc-step { display: flex; gap: 16px; margin-bottom: 16px; align-items: flex-start; }
-  .arc-num { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #C4882A, #8B5E2A); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: white; flex-shrink: 0; }
-  .arc-content h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-  .arc-content p { font-size: 13px; color: #94856e; }
-
-  .adlib-card { background: linear-gradient(135deg, #080d1a, #0a0f1f); border: 1px solid rgba(96,165,250,0.2); border-radius: 12px; padding: 20px; margin-bottom: 14px; }
-  .adlib-card a { display: inline-block; background: rgba(96,165,250,0.15); color: #60a5fa; text-decoration: none; padding: 7px 16px; border-radius: 8px; font-size: 12px; font-weight: 700; margin-right: 8px; margin-bottom: 6px; border: 1px solid rgba(96,165,250,0.25); transition: background 0.2s; }
-
-  .ig-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-  .ig-name { font-size: 15px; font-weight: 800; color: var(--text); }
-  .ig-handle { font-size: 12px; color: var(--accent); }
-  .ig-handle a { color: var(--accent); text-decoration: none; }
-  .ig-handle a:hover { text-decoration: underline; }
-  .ig-followers { font-size: 22px; font-weight: 800; color: var(--accent); }
-  .ig-flabel { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
-  .ig-note { font-size: 12px; color: #7a6a55; line-height: 1.5; }
-  .ig-ads-link a { font-size: 11px; color: #60a5fa; text-decoration: none; }
-
+  /* Timeline */
   .timeline { position: relative; padding-left: 24px; }
   .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border); }
   .tl-item { position: relative; margin-bottom: 20px; }
   .tl-item::before { content: ''; position: absolute; left: -20px; top: 4px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
-  .tl-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: var(--text); }
+  .tl-week { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+  .tl-title { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
   .tl-desc { font-size: 13px; color: #94856e; }
-  .tl-week { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
 
-  .warn-box { background: rgba(196,136,42,0.06); border: 1px solid rgba(196,136,42,0.25); border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #c4a870; margin-bottom: 16px; }
-  .warn-box strong { color: var(--accent); }
-  .info-box { background: rgba(96,165,250,0.06); border: 1px solid rgba(96,165,250,0.2); border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #8aadcc; margin-bottom: 16px; }
-  .info-box strong { color: #60a5fa; }
+  .warn-box { background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.25); border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #c4a870; }
+  .warn-box strong { color: var(--warn); }
 
   ::-webkit-scrollbar { width: 6px; height: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-
-  .price-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; }
-  .price-luxury { background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
-  .price-premium { background: rgba(196,136,42,0.15); color: #C4882A; border: 1px solid rgba(196,136,42,0.3); }
-  .price-mid { background: rgba(96,165,250,0.1); color: #60a5fa; border: 1px solid rgba(96,165,250,0.25); }
-  .price-budget { background: rgba(122,106,85,0.15); color: #7a6a55; border: 1px solid rgba(122,106,85,0.3); }
-  .price-us { background: rgba(74,222,128,0.12); color: #4ade80; border: 1px solid rgba(74,222,128,0.25); }
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>BKF Leather Butterfly Chair — Plan Completo USA</h1>
-  <p>Análisis de mercado · Competidores · Meta Ads Strategy · Estructura de campaña · Plan de lanzamiento</p>
+  <h1>Nardelli Design — BKF Chair USA</h1>
+  <p>Referencia operativa · Meta Ads · Competidores · Plan de lanzamiento</p>
   <div class="meta">
     <span class="tag tag-gold">Mayo 2026</span>
     <span class="tag tag-green">Stock en Greenville, USA</span>
     <span class="tag tag-blue">Precio: $500 USD</span>
-    <span class="tag tag-orange">Margen: $200/unidad</span>
-    <span class="tag tag-gold">Sociedad Manuel 75% · Algoritmia 25%</span>
+    <span class="tag tag-gold">Manuel 75% · Algoritmia 25%</span>
+    <span class="tag tag-orange">A futuro: artículos de cuero — La Forestal</span>
   </div>
 </div>
 
 <!-- NAV -->
 <nav>
   <a href="#resumen">📊 Resumen</a>
-  <a href="#producto">🪑 Producto</a>
-  <a href="#mercado">🗺️ Mapa de Mercado</a>
   <a href="#competidores">🏆 Competidores</a>
-  <a href="#instagram">📸 Instagram</a>
-  <a href="#tipos-creativos">🎬 Tipos de Creativo</a>
-  <a href="#audiencias">🎯 Audiencias</a>
+  <a href="#anillos">🎬 Los 5 Anillos</a>
   <a href="#hooks">🪝 Hooks</a>
-  <a href="#copy">✍️ Copy</a>
-  <a href="#estructura">⚙️ Estructura Ads</a>
-  <a href="#tienda">🛒 La Tienda</a>
-  <a href="#dodont">✅ DO / DON'T</a>
+  <a href="#campana">⚙️ Campaña</a>
   <a href="#finanzas">💰 Finanzas</a>
-  <a href="#plan">🗓️ Plan de Acción</a>
+  <a href="#plan">🗓️ Plan</a>
 </nav>
 
 <div class="container">
@@ -282,114 +167,58 @@
 <!-- ═══════ RESUMEN ═══════ -->
 <section id="resumen">
   <div class="section-title"><span>📊</span> Resumen del Negocio</div>
-  <div class="section-sub">Todo lo confirmado hasta ahora — base del proyecto</div>
+  <div class="section-sub">Los datos clave — todo lo que necesitás saber en un vistazo</div>
 
-  <div class="grid-4" style="margin-bottom:20px;">
-    <div class="stat-card"><div class="stat-number">$500</div><div class="stat-label">Precio de venta</div><div class="stat-sub">USD — tienda propia USA</div></div>
-    <div class="stat-card"><div class="stat-number">$300</div><div class="stat-label">Costo en Greenville</div><div class="stat-sub">Todo incluido, listo para vender</div></div>
-    <div class="stat-card"><div class="stat-number">$200</div><div class="stat-label">Margen bruto</div><div class="stat-sub">Antes de ads y shipping</div></div>
-    <div class="stat-card"><div class="stat-number">25%</div><div class="stat-label">Take de Algoritmia</div><div class="stat-sub">Manuel 75% · Luca 25%</div></div>
+  <div class="grid-5" style="margin-bottom:20px;">
+    <div class="stat-card">
+      <div class="stat-number">$300</div>
+      <div class="stat-label">Costo puesto en Greenville</div>
+      <div class="stat-sub">Todo incluido — Manuel lo lleva</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">$500</div>
+      <div class="stat-label">Precio de venta</div>
+      <div class="stat-sub">Confirmado por Manuel</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">$200</div>
+      <div class="stat-label">Margen bruto / unidad</div>
+      <div class="stat-sub">Antes de ads</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">25%</div>
+      <div class="stat-label">Participación Algoritmia</div>
+      <div class="stat-sub">Sobre ganancia neta</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">2.5x</div>
+      <div class="stat-label">ROAS mínimo breakeven</div>
+      <div class="stat-sub">CPA máximo: $200</div>
+    </div>
   </div>
 
   <div class="grid-2">
     <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">✅ Confirmado</div>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Stock</span><span style="font-weight:700;">Todas las sillas en Greenville, USA</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Logística</span><span style="font-weight:700;">Manuel despacha desde Greenville</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Tienda</span><span style="font-weight:700;">Shopify nuevo — separado de TSF</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Pixel</span><span style="font-weight:700;">Nuevo — misma cuenta publicitaria TSF</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Envío doméstico</span><span style="font-weight:700;">~$35–50 USD (FedEx/UPS ground)</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;"><span style="color:var(--muted);">Mercado</span><span style="font-weight:700;">Estados Unidos únicamente</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Confirmado</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>Costo $300 all-in, stock en Greenville, SC</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>Manuel se encarga de la logística y el stock</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>Tienda separada de TSF — Shopify nuevo</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>Manuel tiene fotos y material del producto</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>Nombre en consideración: Nardelli Design (2021)</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--win);font-weight:700;flex-shrink:0;">✓</span><span>A futuro: artículos de cuero de La Forestal</span></div>
       </div>
     </div>
     <div class="card">
-      <div style="font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">⏳ Pendiente de Manuel</div>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Cantidad exacta de sillas</span><span class="tag tag-orange">URGENTE</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Fotos lifestyle</span><span class="tag tag-orange">URGENTE</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Colores disponibles</span><span class="tag tag-muted">Confirmar</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Peso y dimensiones para envío</span><span class="tag tag-muted">Confirmar</span></div>
-        <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;"><span style="color:var(--muted);">Nombre / dominio</span><span class="tag tag-muted">Decidir juntos</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Pendiente</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Nombre final de la tienda</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Cantidad exacta de stock disponible</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Fotos de producto en ambiente (living real)</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Dominio + Shopify configurado</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Pixel nuevo en la cuenta de Meta</span></div>
+        <div style="display:flex;gap:8px;align-items:flex-start;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">⚠</span><span>Video UGC grabado antes de lanzar</span></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ PRODUCTO ═══════ -->
-<section id="producto">
-  <div class="section-title"><span>🪑</span> El Producto — BKF Butterfly Chair</div>
-  <div class="section-sub">Por qué este producto tiene demanda real y sostenida en USA</div>
-
-  <div class="grid-2" style="margin-bottom:20px;">
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Características</div>
-      <div style="display:flex;flex-direction:column;gap:12px;">
-        <div style="display:flex;gap:12px;align-items:flex-start;padding-bottom:12px;border-bottom:1px solid var(--border);">
-          <div style="width:36px;height:36px;min-width:36px;background:rgba(196,136,42,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">🐄</div>
-          <div><div style="font-size:13px;font-weight:700;margin-bottom:2px;">Cuero vacuno genuino</div><div style="font-size:12px;color:var(--muted);">Envejece bien, patina con el uso — los compradores premium aman esto</div></div>
-        </div>
-        <div style="display:flex;gap:12px;align-items:flex-start;padding-bottom:12px;border-bottom:1px solid var(--border);">
-          <div style="width:36px;height:36px;min-width:36px;background:rgba(196,136,42,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">🔩</div>
-          <div><div style="font-size:13px;font-weight:700;margin-bottom:2px;">Estructura de hierro negro</div><div style="font-size:12px;color:var(--muted);">Desmontable en 4 piezas — fácil de enviar y almacenar</div></div>
-        </div>
-        <div style="display:flex;gap:12px;align-items:flex-start;padding-bottom:12px;border-bottom:1px solid var(--border);">
-          <div style="width:36px;height:36px;min-width:36px;background:rgba(196,136,42,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">🎨</div>
-          <div><div style="font-size:13px;font-weight:700;margin-bottom:2px;">Colores: Negro + Cognac (tan)</div><div style="font-size:12px;color:var(--muted);">Los dos más vendidos en USA — combinan con cualquier interior</div></div>
-        </div>
-        <div style="display:flex;gap:12px;align-items:flex-start;">
-          <div style="width:36px;height:36px;min-width:36px;background:rgba(196,136,42,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;">🇦🇷</div>
-          <div><div style="font-size:13px;font-weight:700;margin-bottom:2px;">Diseño argentino — 1938</div><div style="font-size:12px;color:var(--muted);">Jorge Ferrari-Hardoy, Juan Kurchan, Antonio Bonet — historia que vende</div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por qué la gente la compra en USA</div>
-      <div style="display:flex;flex-direction:column;gap:12px;">
-        <div style="background:var(--bg3);border-radius:8px;padding:12px;"><div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;">Statement piece</div><div style="font-size:13px;color:var(--muted);">No es una silla, es el punto focal del cuarto. La gente compra la pieza que transforma un espacio ordinario en algo editorial.</div></div>
-        <div style="background:var(--bg3);border-radius:8px;padding:12px;"><div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;">Super fotogénica</div><div style="font-size:13px;color:var(--muted);">Funciona perfectamente en Instagram y Pinterest. Los compradores la postean — genera contenido orgánico sin pedirlo.</div></div>
-        <div style="background:var(--bg3);border-radius:8px;padding:12px;"><div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;">MCM (Mid-Century Modern) — 10 años de tendencia</div><div style="font-size:13px;color:var(--muted);">El estilo no pasa de moda. Interior designers siguen recomendando esta silla activamente en 2026.</div></div>
-        <div style="background:var(--bg3);border-radius:8px;padding:12px;"><div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:4px;">Regalo premium aspiracional</div><div style="font-size:13px;color:var(--muted);">Casa nueva, housewarming, cumpleaños — compra impulsiva de alto valor. Mucha gente la regala como pieza de arte funcional.</div></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="warn-box">
-    <strong>Gap de mercado real:</strong> Entre los $280–$380 de las marcas baratas (India) y los $995+ de Cuero Design (luxury), hay un espacio vacío de $400–$700 con cuero genuino de calidad y marca cuidada. Nadie lo está dominando con Meta Ads pesados. Ese es el espacio de este negocio.
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ MAPA DE MERCADO ═══════ -->
-<section id="mercado">
-  <div class="section-title"><span>🗺️</span> Mapa de Mercado USA</div>
-  <div class="section-sub">Cómo está segmentado el mercado — dónde entramos nosotros</div>
-
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px;">
-    <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-radius:12px;padding:16px;text-align:center;">
-      <div style="font-size:11px;font-weight:700;color:#f87171;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Ultra Premium</div>
-      <div style="font-size:22px;font-weight:800;color:#f87171;margin-bottom:6px;">$1,000+</div>
-      <div style="font-size:12px;color:var(--muted);">Cuero Design, 1stDibs, Modern Furnishings</div>
-    </div>
-    <div style="background:rgba(196,136,42,0.08);border:2px solid rgba(196,136,42,0.4);border-radius:12px;padding:16px;text-align:center;position:relative;">
-      <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--accent);color:white;font-size:10px;font-weight:700;padding:2px 10px;border-radius:999px;white-space:nowrap;">👉 NUESTRO ESPACIO</div>
-      <div style="font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Premium</div>
-      <div style="font-size:22px;font-weight:800;color:var(--accent);margin-bottom:6px;">$400–$700</div>
-      <div style="font-size:12px;color:var(--muted);">Gap poco competido — cuero genuino + marca</div>
-    </div>
-    <div style="background:rgba(96,165,250,0.06);border:1px solid rgba(96,165,250,0.2);border-radius:12px;padding:16px;text-align:center;">
-      <div style="font-size:11px;font-weight:700;color:#60a5fa;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Mid-Range</div>
-      <div style="font-size:22px;font-weight:800;color:#60a5fa;margin-bottom:6px;">$200–$380</div>
-      <div style="font-size:12px;color:var(--muted);">Hunters Hide, Calma Chicha, Classy Leather</div>
-    </div>
-    <div style="background:rgba(122,106,85,0.08);border:1px solid rgba(122,106,85,0.2);border-radius:12px;padding:16px;text-align:center;">
-      <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Budget</div>
-      <div style="font-size:22px;font-weight:800;color:var(--muted);margin-bottom:6px;">$80–$200</div>
-      <div style="font-size:12px;color:var(--muted);">Wayfair, Amazon, Parrys, The Gifts Connect</div>
     </div>
   </div>
 </section>
@@ -398,10 +227,10 @@
 
 <!-- ═══════ COMPETIDORES ═══════ -->
 <section id="competidores">
-  <div class="section-title"><span>🏆</span> Análisis de Competidores</div>
-  <div class="section-sub">Quién vende esto en USA, a cuánto y cómo lo posicionan</div>
+  <div class="section-title"><span>🏆</span> Competidores</div>
+  <div class="section-sub">Quiénes están en el mercado y cómo nos posicionamos</div>
 
-  <div class="card" style="overflow-x:auto;">
+  <div class="card" style="overflow-x:auto;margin-bottom:20px;">
     <table class="bench-table">
       <thead>
         <tr>
@@ -411,7 +240,7 @@
           <th>Origen</th>
           <th>Diferencial</th>
           <th>Amenaza</th>
-          <th>Link</th>
+          <th>Web</th>
         </tr>
       </thead>
       <tbody>
@@ -422,7 +251,7 @@
           <td>🇦🇷 Argentina</td>
           <td style="font-size:12px;color:var(--muted);">Original BKF, vegetable tanned, FedEx 2 días, historia real</td>
           <td><span style="color:var(--lose);font-weight:700;">Alta</span></td>
-          <td><a href="https://www.bigbkf.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">bigbkf.com ↗</a></td>
+          <td><a href="https://bigbkf.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">bigbkf.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Cuero Design</td>
@@ -431,7 +260,7 @@
           <td>🌍 Suecia</td>
           <td style="font-size:12px;color:var(--muted);">Luxury branding, editorial, diseño premium reconocido</td>
           <td><span style="color:var(--warn);font-weight:700;">Media</span></td>
-          <td><a href="https://www.cuerodesign.com/products/leather-butterfly-chair" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">cuerodesign.com ↗</a></td>
+          <td><a href="https://cuerodesign.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">cuerodesign.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Hilason</td>
@@ -440,7 +269,7 @@
           <td>🇺🇸 Texas</td>
           <td style="font-size:12px;color:var(--muted);">"Made in USA", cuero hair-on, 40k+ clientes, marca de monturas</td>
           <td><span style="color:var(--warn);font-weight:700;">Media</span></td>
-          <td><a href="https://hilason.com/collections/butterfly-chair" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">hilason.com ↗</a></td>
+          <td><a href="https://hilason.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">hilason.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Sweet Modern</td>
@@ -448,8 +277,8 @@
           <td><span class="price-luxury">Luxury</span></td>
           <td>🇺🇸 Akron, OH</td>
           <td style="font-size:12px;color:var(--muted);">Holly Hunt leather ultra-premium, MCM curado, tienda física</td>
-          <td><span style="color:var(--accent3);font-weight:700;">Baja</span></td>
-          <td><a href="https://sweetmodern.com/products/bkf-butterfly-chair-with-new-suede-leather/44926/c29/" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">sweetmodern.com ↗</a></td>
+          <td><span style="color:var(--muted);font-weight:700;">Baja</span></td>
+          <td><a href="https://sweetmodern.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">sweetmodern.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Saintstag</td>
@@ -458,7 +287,7 @@
           <td>🌍 India/Global</td>
           <td style="font-size:12px;color:var(--muted);">Cowhide, múltiples estilos, Amazon + web propia, buen SEO</td>
           <td><span style="color:var(--warn);font-weight:700;">Media</span></td>
-          <td><a href="https://saintstag.com/product-category/vintage-leather-butterfly-chair/" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">saintstag.com ↗</a></td>
+          <td><a href="https://saintstag.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">saintstag.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Classy Leather Bags</td>
@@ -467,7 +296,7 @@
           <td>🇮🇳 India</td>
           <td style="font-size:12px;color:var(--muted);">SEO fuerte, blog, múltiples colores, 20K IG followers</td>
           <td><span style="color:var(--warn);font-weight:700;">Media</span></td>
-          <td><a href="https://classyleatherbags.com/collections/leather-butterfly-chairs" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">classyleatherbags.com ↗</a></td>
+          <td><a href="https://classyleatherbags.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">classyleatherbags.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Hunters Hide</td>
@@ -475,8 +304,8 @@
           <td><span class="price-mid">Mid</span></td>
           <td>🇮🇳 India</td>
           <td style="font-size:12px;color:var(--muted);">Múltiples colores únicos, envío rápido USA/UK/AU</td>
-          <td><span style="color:var(--accent3);font-weight:700;">Baja</span></td>
-          <td><a href="https://www.huntershide.store/category/butterfly-chair" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">huntershide.store ↗</a></td>
+          <td><span style="color:var(--muted);font-weight:700;">Baja</span></td>
+          <td><a href="https://huntershide.store" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">huntershide.store ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Calma Chicha</td>
@@ -485,7 +314,7 @@
           <td>🇦🇷 Argentina</td>
           <td style="font-size:12px;color:var(--muted);">Original 1938, canvas + cuero + outdoor, histórico</td>
           <td><span style="color:var(--warn);font-weight:700;">Media</span></td>
-          <td><a href="https://calmachicha.com/us/leather-butterfly-chair/" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">calmachicha.com ↗</a></td>
+          <td><a href="https://calmachicha.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">calmachicha.com ↗</a></td>
         </tr>
         <tr>
           <td style="font-weight:700;">Parrys Leather World</td>
@@ -493,12 +322,12 @@
           <td><span class="price-budget">Budget</span></td>
           <td>🇮🇳 India</td>
           <td style="font-size:12px;color:var(--muted);">Precio bajo, goat leather, envío gratis USA, Etsy también</td>
-          <td><span style="color:var(--accent3);font-weight:700;">Baja</span></td>
-          <td><a href="https://parrysleatherworld.com/collections/butterfly-chairs" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">parrysleatherworld.com ↗</a></td>
+          <td><span style="color:var(--muted);font-weight:700;">Baja</span></td>
+          <td><a href="https://parrysleatherworld.com" target="_blank" style="color:var(--accent);text-decoration:none;font-size:12px;">parrysleatherworld.com ↗</a></td>
         </tr>
         <tr style="background:rgba(196,136,42,0.04);">
-          <td style="font-weight:800;color:var(--accent);">👉 Nuestro producto</td>
-          <td style="font-weight:800;color:var(--win);">$450–$750</td>
+          <td style="font-weight:800;color:var(--accent);">👉 Nardelli Design</td>
+          <td style="font-weight:800;color:var(--win);">$500</td>
           <td><span class="price-us">Nuestro</span></td>
           <td>🇦🇷 → 🇺🇸 Greenville</td>
           <td style="font-size:12px;color:var(--muted);">Cuero vacuno real, historia argentina, stock en USA, tienda propia</td>
@@ -508,179 +337,61 @@
       </tbody>
     </table>
   </div>
-</section>
 
-<div class="divider"></div>
-
-<!-- ═══════ INSTAGRAM ═══════ -->
-<section id="instagram">
-  <div class="section-title"><span>📸</span> Instagram de los Competidores</div>
-  <div class="section-sub">Estado actual de cada marca en redes — para entender quién está activo y quién no</div>
-
-  <div class="grid-3" style="margin-bottom:20px;">
-
-    <div class="ig-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-        <div><div class="ig-name">Big BKF Buenos Aires</div><div class="ig-handle"><a href="https://www.instagram.com/bigbkfbuenosaires/" target="_blank">@bigbkfbuenosaires ↗</a></div></div>
-        <span class="tag tag-gold">Activo</span>
-      </div>
-      <div><div class="ig-followers">13K</div><div class="ig-flabel">Seguidores</div></div>
-      <div class="ig-note">El más establecido del nicho. Contenido de calidad, fotos de producto en ambiente, historia de la marca. <strong style="color:var(--text);">Referente directo</strong> — mirar su contenido de cerca.</div>
-    </div>
-
-    <div class="ig-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-        <div><div class="ig-name">Classy Leather Bags</div><div class="ig-handle"><a href="https://www.instagram.com/classyleatherbag/" target="_blank">@classyleatherbag ↗</a></div></div>
-        <span class="tag tag-gold">Activo</span>
-      </div>
-      <div><div class="ig-followers">20K</div><div class="ig-flabel">Seguidores</div></div>
-      <div class="ig-note">Los más activos en contenido de todo el nicho. Mezclan bolsos + sillas. <strong style="color:var(--text);">1,018 posts</strong>, contenido consistente. Buena referencia para ver qué funciona en IG para este tipo de producto.</div>
-    </div>
-
-    <div class="ig-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-        <div><div class="ig-name">Parrys Leather World</div><div class="ig-handle"><a href="https://www.instagram.com/parrysleatherworld/" target="_blank">@parrysleatherworld ↗</a></div></div>
-        <span class="tag tag-muted">Poco activo</span>
-      </div>
-      <div><div class="ig-followers">n/d</div><div class="ig-flabel">Seguidores</div></div>
-      <div class="ig-note">Presencia en IG pero sin consistencia de contenido. También tienen Etsy y eBay. Foco en India, no en branding USA. <strong style="color:var(--text);">No es una amenaza en redes.</strong></div>
-    </div>
-
-    <div class="ig-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-        <div><div class="ig-name">Hilason</div><div class="ig-handle"><a href="https://www.instagram.com/hilason_saddles/" target="_blank">@hilason_saddles ↗</a></div></div>
-        <span class="tag tag-muted">Fuera del nicho</span>
-      </div>
-      <div><div class="ig-followers">1.5K</div><div class="ig-flabel">Seguidores</div></div>
-      <div class="ig-note">Su foco es monturas y equipo ecuestre — las butterfly chairs son un producto secundario para ellos. El contenido de IG es 100% western/rodeo, <strong style="color:var(--text);">no compiten en home decor.</strong></div>
-    </div>
-
-    <div class="ig-card">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-        <div><div class="ig-name">Saint Stag</div><div class="ig-handle"><a href="https://www.instagram.com/saintstag_/" target="_blank">@saintstag_ ↗</a></div></div>
-        <span class="tag tag-muted">Moderado</span>
-      </div>
-      <div><div class="ig-followers">n/d</div><div class="ig-flabel">Seguidores</div></div>
-      <div class="ig-note">Tienen presencia en Amazon (varios listings activos con reviews) + web propia. Facebook: <a href="https://www.facebook.com/saintstag" target="_blank" style="color:var(--accent);">facebook.com/saintstag</a>. Foco en India/global.</div>
-    </div>
-
-  </div>
-
-  <div class="info-box">
-    <strong>Conclusión:</strong> En Instagram, el nicho está casi vacío. Big BKF (13K) y Classy Leather Bags (20K) son los únicos con presencia real. Con contenido consistente y bien fotografiado, podemos construir una cuenta de 5K–15K followers en 6 meses y usar eso como social proof adicional para los ads.
+  <div style="background:rgba(196,136,42,0.06);border:1px solid rgba(196,136,42,0.2);border-radius:10px;padding:14px 18px;font-size:13px;color:#c4a870;">
+    <strong style="color:var(--accent);">El gap a explotar:</strong> El segmento $400–$700 premium con stock en USA no tiene un jugador dominante haciendo Meta Ads. Big BKF compite desde Argentina (demora + shipping). Los de India no tienen historia ni branding real. Nosotros tenemos cuero real + stock local + historia argentina.
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════ TIPOS DE CREATIVO ═══════ -->
-<section id="tipos-creativos">
-  <div class="section-title"><span>🎬</span> Tipos de Creativo — Qué Hace Cada Uno</div>
-  <div class="section-sub">Para este producto específico — cada creativo tiene un rol en el funnel</div>
+<!-- ═══════ LOS 5 ANILLOS ═══════ -->
+<section id="anillos">
+  <div class="section-title"><span>🎬</span> Los 5 Anillos — Creativos BKF Chair</div>
+  <div class="section-sub">Cada anuncio tiene un rol. Los 5 trabajan juntos — ninguno alcanza solo.</div>
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+  <div class="grid-5">
 
-    <div style="background:var(--bg2);border:1px solid rgba(196,136,42,0.35);border-radius:14px;padding:20px;border-top:3px solid var(--accent);">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-        <div style="width:44px;height:44px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🏠</div>
-        <div><div style="font-size:11px;font-weight:700;letter-spacing:1px;color:var(--accent);text-transform:uppercase;margin-bottom:2px;">Tipo 1</div><div style="font-size:16px;font-weight:800;">Lifestyle en Ambiente</div></div>
-      </div>
-      <div style="background:rgba(196,136,42,0.08);border-radius:8px;padding:10px 12px;margin-bottom:12px;">
-        <div style="font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Su trabajo</div>
-        <div style="font-size:13px;color:var(--text);font-weight:600;">Despertar el deseo — "quiero eso en mi living"</div>
-      </div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;">La silla en un rincón real: luz natural, planta al lado, un libro. Foto editorial pero auténtica. <strong style="color:var(--text);">Outperforma el fondo blanco 2–4x</strong> en furniture. El usuario no ve una silla — ve su departamento transformado.</div>
-      <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;"><span class="tag tag-gold">Frío N1–N2</span><span class="tag tag-orange">Imagen o video corto</span></div>
+    <div class="ring-card" style="background:linear-gradient(135deg,#1a1205,#120e08);border:1px solid rgba(196,136,42,0.3);border-top:3px solid #C4882A;">
+      <div class="ring-badge" style="color:#C4882A;">Ring 1</div>
+      <div class="ring-title">UGC — El Caballo de Troya</div>
+      <div class="ring-role">Romper el escepticismo publicitario. Se camufla en el feed — el usuario baja la guardia antes de darse cuenta que es un ad.</div>
+      <div class="ring-example" style="background:rgba(196,136,42,0.08);color:#c4a870;">"Compré esta silla argentina y no puedo creer cómo transformó mi living." — Manuel o cliente en Greenville, cámara casual, silla de fondo.</div>
+      <span class="tag tag-gold" style="width:fit-content;">Frío · N1–N2</span>
     </div>
 
-    <div style="background:var(--bg2);border:1px solid rgba(96,165,250,0.35);border-radius:14px;padding:20px;border-top:3px solid #60a5fa;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-        <div style="width:44px;height:44px;border-radius:10px;background:#1d4ed8;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">✋</div>
-        <div><div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#60a5fa;text-transform:uppercase;margin-bottom:2px;">Tipo 2</div><div style="font-size:16px;font-weight:800;">Close-up del Cuero</div></div>
-      </div>
-      <div style="background:rgba(96,165,250,0.08);border-radius:8px;padding:10px 12px;margin-bottom:12px;">
-        <div style="font-size:11px;font-weight:700;color:#60a5fa;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Su trabajo</div>
-        <div style="font-size:13px;color:var(--text);font-weight:600;">Comunicar calidad — justificar el precio de $450–$750</div>
-      </div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;">Macro del cuero: la textura, las costuras, el color natural. Alguien pasando la mano por la superficie. Ver el material hace que el precio pase de "caro" a "entiendo por qué vale eso". <strong style="color:var(--text);">Destruye la objeción de precio.</strong></div>
-      <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;"><span class="tag tag-blue">Consideración N2–N3</span><span class="tag tag-orange">Video 8–15s</span></div>
+    <div class="ring-card" style="background:linear-gradient(135deg,#05101a,#080d14);border:1px solid rgba(96,165,250,0.3);border-top:3px solid #60a5fa;">
+      <div class="ring-badge" style="color:#60a5fa;">Ring 2</div>
+      <div class="ring-title">Product Demo — El Educador</div>
+      <div class="ring-role">Destruir la fricción del "parece cuero sintético de India". El comprador lógico necesita ver el material para creer la promesa.</div>
+      <div class="ring-example" style="background:rgba(96,165,250,0.08);color:#8aadcc;">Close-up del cuero: textura, costuras, la mano pasando por la superficie. Sin palabras. Ver la calidad destruye la objeción de precio antes de que aparezca.</div>
+      <span class="tag tag-blue" style="width:fit-content;">Frío/Tibio · N2–N3</span>
     </div>
 
-    <div style="background:var(--bg2);border:1px solid rgba(74,222,128,0.35);border-radius:14px;padding:20px;border-top:3px solid #4ade80;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-        <div style="width:44px;height:44px;border-radius:10px;background:#166534;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📱</div>
-        <div><div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#4ade80;text-transform:uppercase;margin-bottom:2px;">Tipo 3</div><div style="font-size:16px;font-weight:800;">UGC — Unboxing + Setup</div></div>
-      </div>
-      <div style="background:rgba(74,222,128,0.07);border-radius:8px;padding:10px 12px;margin-bottom:12px;">
-        <div style="font-size:11px;font-weight:700;color:#4ade80;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Su trabajo</div>
-        <div style="font-size:13px;color:var(--text);font-weight:600;">Social proof — "si a él le quedó así, a mí también"</div>
-      </div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;">"Recibí esta silla de Argentina y así quedó en mi departamento." Video desde que llega la caja hasta que está armada en el cuarto. Auténtico, sin producción. <strong style="color:var(--text);">El formato que más convierte en furniture.</strong></div>
-      <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;"><span class="tag tag-green">N3–N4</span><span class="tag tag-orange">Video 30–60s</span></div>
+    <div class="ring-card" style="background:linear-gradient(135deg,#051205,#080e08);border:1px solid rgba(74,222,128,0.3);border-top:3px solid #4ade80;">
+      <div class="ring-badge" style="color:#4ade80;">Ring 3</div>
+      <div class="ring-title">Testimonial — La Prueba Social</div>
+      <div class="ring-role">Generar empatía pura. "Él es como yo, tenía mi mismo depto vacío y lo solucionó." Empuja indecisos a comprar.</div>
+      <div class="ring-example" style="background:rgba(74,222,128,0.06);color:#7aad8a;">Foto antes (rincón vacío) + después (silla instalada). "La pedí el miércoles, llegó el viernes desde Greenville." Tiempo específico, resultado visual.</div>
+      <span class="tag tag-green" style="width:fit-content;">Indecisos · N3–N4</span>
     </div>
 
-    <div style="background:var(--bg2);border:1px solid rgba(251,146,60,0.35);border-radius:14px;padding:20px;border-top:3px solid #fb923c;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-        <div style="width:44px;height:44px;border-radius:10px;background:#9a3412;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🔄</div>
-        <div><div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#fb923c;text-transform:uppercase;margin-bottom:2px;">Tipo 4</div><div style="font-size:16px;font-weight:800;">Before / After del Cuarto</div></div>
-      </div>
-      <div style="background:rgba(251,146,60,0.07);border-radius:8px;padding:10px 12px;margin-bottom:12px;">
-        <div style="font-size:11px;font-weight:700;color:#fb923c;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Su trabajo</div>
-        <div style="font-size:13px;color:var(--text);font-weight:600;">Demostrar el impacto — "una sola pieza cambia todo"</div>
-      </div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;">Foto/video del rincón sin la silla → con la silla. El contraste es inmediato y emocional. <strong style="color:var(--text);">Muy efectivo en Facebook</strong> — genera shares y comentarios "me encantaría esto en mi casa".</div>
-      <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;"><span class="tag tag-orange">N1–N3</span><span class="tag tag-blue">Carrusel o split</span></div>
+    <div class="ring-card" style="background:linear-gradient(135deg,#150a05,#100805);border:1px solid rgba(251,146,60,0.3);border-top:3px solid #fb923c;">
+      <div class="ring-badge" style="color:#fb923c;">Ring 4</div>
+      <div class="ring-title">Offer Highlight — El Gatillo Financiero</div>
+      <div class="ring-role">Rematar la venta. Sin historias. Va directo al grano para quien ya está caliente o solo reacciona a incentivos económicos.</div>
+      <div class="ring-example" style="background:rgba(251,146,60,0.08);color:#c4906a;">"$500 — cuero vacuno real, stock en USA, envío en 2 días." Precio visible desde el segundo 1. Si hay stock limitado, mencionarlo.</div>
+      <span class="tag tag-orange" style="width:fit-content;">BOFU · N4–N5</span>
     </div>
 
-    <div style="background:var(--bg2);border:1px solid rgba(239,68,68,0.35);border-radius:14px;padding:20px;border-top:3px solid #ef4444;">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-        <div style="width:44px;height:44px;border-radius:10px;background:#7f1d1d;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">💰</div>
-        <div><div style="font-size:11px;font-weight:700;letter-spacing:1px;color:#f87171;text-transform:uppercase;margin-bottom:2px;">Tipo 5</div><div style="font-size:16px;font-weight:800;">Oferta directa — BOFU</div></div>
-      </div>
-      <div style="background:rgba(239,68,68,0.07);border-radius:8px;padding:10px 12px;margin-bottom:12px;">
-        <div style="font-size:11px;font-weight:700;color:#f87171;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Su trabajo</div>
-        <div style="font-size:13px;color:var(--text);font-weight:600;">Cerrar al que ya está caliente — retargeting puro</div>
-      </div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;">"Free shipping · Handcrafted genuine leather · Ships in 48h from Greenville." Sin historia, sin contexto — directo a las objeciones de quien ya vio la silla y no compró todavía. Precio visible + urgencia + garantía.</div>
-      <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;"><span class="tag tag-red">N5 BOFU</span><span class="tag tag-green">Retargeting</span></div>
+    <div class="ring-card" style="background:linear-gradient(135deg,#0d0518,#0a0512);border:1px solid rgba(167,139,250,0.3);border-top:3px solid #a78bfa;">
+      <div class="ring-badge" style="color:#a78bfa;">Ring 5</div>
+      <div class="ring-title">Features & Benefits — El Justificador</div>
+      <div class="ring-role">Darle la excusa racional a la compra emocional. Para el analítico comparando en otra pestaña vs Saintstag o Hilason.</div>
+      <div class="ring-example" style="background:rgba(167,139,250,0.07);color:#9a8ac4;">"Cuero vacuno full-grain — no PU, no bonded, no goat leather. Marco hierro forjado. Diseño Hardoy 1938, Buenos Aires. Stock Greenville SC."</div>
+      <span class="tag" style="width:fit-content;background:rgba(167,139,250,0.1);color:#a78bfa;border:1px solid rgba(167,139,250,0.25);">Analítico · N3–N4</span>
     </div>
 
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ AUDIENCIAS ═══════ -->
-<section id="audiencias">
-  <div class="section-title"><span>🎯</span> Audiencias — A Quién Le Mostramos los Ads</div>
-  <div class="section-sub">Targeting para Meta Ads — frío, tibio y retargeting</div>
-
-  <div class="grid-3">
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Tráfico frío — Intereses</div>
-      <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Demografía core:</strong> <span style="color:var(--muted);">28–52 años, propietarios de vivienda, ingresos $75k+/año, USA</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Intereses primarios:</strong> <span style="color:var(--muted);">Interior design, home decor, mid-century modern, Apartment Therapy, Architectural Digest</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Intereses secundarios:</strong> <span style="color:var(--muted);">West Elm, CB2, Design Within Reach, Pottery Barn — compradores de muebles premium</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Comportamientos:</strong> <span style="color:var(--muted);">Engaged shoppers, Online buyers (últimos 30 días)</span></div>
-      </div>
-    </div>
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:#4ade80;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Advantage+ Shopping (recomendado)</div>
-      <div style="font-size:13px;color:#94856e;line-height:1.7;margin-bottom:12px;">Para furniture es el default que funciona mejor en 2026. Dejar que Meta optimice audiences automáticamente — frío + tibio + retargeting en una sola campaña.</div>
-      <div style="background:rgba(74,222,128,0.06);border:1px solid rgba(74,222,128,0.2);border-radius:8px;padding:12px;font-size:13px;color:#86efac;">
-        <strong style="color:#4ade80;">Por qué funciona acá:</strong> Furniture tiene ciclos de decisión más largos. Advantage+ aprende a encontrar a quien está en modo "estoy decorando mi espacio" — y lo hace mejor que cualquier targeting manual.
-      </div>
-    </div>
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:#60a5fa;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Retargeting (semana 3+)</div>
-      <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Visitantes web:</strong> <span style="color:var(--muted);">Últimos 30 días — ya vieron la silla</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Add to Cart sin compra:</strong> <span style="color:var(--muted);">Últimos 7 días — los más calientes</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Checkout iniciado:</strong> <span style="color:var(--muted);">Últimos 3 días — un push y compran</span></div>
-        <div style="padding:8px;background:var(--bg3);border-radius:8px;"><strong>Lookalike 1–3%:</strong> <span style="color:var(--muted);">De compradores — una vez tengamos 30–50 ventas</span></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -689,279 +400,117 @@
 <!-- ═══════ HOOKS ═══════ -->
 <section id="hooks">
   <div class="section-title"><span>🪝</span> Hooks — Los Ganchos que Paran el Scroll</div>
-  <div class="section-sub">Para este producto y este mercado específico — ordenados por temperatura del tráfico</div>
+  <div class="section-sub">Primeras líneas del copy o primeros 3 segundos del video — lo único que decide si el usuario para o pasa</div>
 
-  <div style="margin-bottom:16px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;">Frío (N1–N2) — Despertar deseo en quien no está buscando</div>
-  <div class="grid-2" style="margin-bottom:24px;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
     <div class="hook-card">
-      <div class="hook-number">Ángulo: Historia / Origen</div>
-      <div class="hook-text">"This chair was designed in Argentina in 1938. It's been in the world's most beautiful homes ever since."</div>
-      <div class="hook-desc">El origen histórico funciona como diferenciador inmediato. Nadie más puede decir esto con la misma autenticidad que nosotros.</div>
+      <div class="hook-label">Frío — Deseo / Aspiración (Ring 1)</div>
+      <div class="hook-text">"Every corner of your apartment deserves a chair this good."</div>
     </div>
     <div class="hook-card">
-      <div class="hook-number">Ángulo: Contraste / Dolor</div>
-      <div class="hook-text">"You spent $3,000 on your sofa. Your room still feels empty. One piece changes everything."</div>
-      <div class="hook-desc">Le habla al dolor latente de alguien que decoró bien pero siente que algo falta. Muy efectivo en homeowners 30–50.</div>
-    </div>
-    <div class="hook-card">
-      <div class="hook-number">Ángulo: Aspiracional</div>
-      <div class="hook-text">"The kind of chair you see in a magazine. Turns out you can have it in your apartment for $500."</div>
-      <div class="hook-desc">Democratiza lo aspiracional. El precio al final rompe la expectativa de que algo así sea inalcanzable.</div>
-    </div>
-    <div class="hook-card">
-      <div class="hook-number">Ángulo: Curiosidad</div>
-      <div class="hook-text">"Three architects in Buenos Aires sat down in 1938 to design the perfect chair. They got it right on the first try."</div>
-      <div class="hook-desc">Genera intriga — ¿cuál es esa silla? El usuario siente que tiene que ver el resto.</div>
-    </div>
-  </div>
-
-  <div style="margin-bottom:16px;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;">Caliente (N3–N5) — Para cerrar al que ya considera comprar</div>
-  <div class="grid-2">
-    <div class="hook-card green">
-      <div class="hook-number">Ángulo: Calidad vs. precio</div>
-      <div class="hook-text">"Genuine cowhide leather. Hand-stitched iron frame. Designed to last 50 years. $500 — free shipping."</div>
-      <div class="hook-desc">Copy 100% racional. Le da al comprador la justificación lógica para una compra que ya tomó emocionalmente.</div>
-    </div>
-    <div class="hook-card green">
-      <div class="hook-number">Ángulo: Social proof</div>
-      <div class="hook-text">"⭐⭐⭐⭐⭐ 'Best purchase I've made for my apartment in years.' — Sarah, Austin TX"</div>
-      <div class="hook-desc">Testimonio con nombre real + ciudad. Funciona especialmente en retargeting — ve que alguien como él ya lo compró.</div>
-    </div>
-    <div class="hook-card orange">
-      <div class="hook-number">Ángulo: Urgencia / Stock</div>
-      <div class="hook-text">"Limited stock. Each chair is handcrafted — when they're gone, they're gone. Ships in 48h from the US."</div>
-      <div class="hook-desc">Para retargeting de ATC y checkout iniciados. El stock limitado + velocidad de envío elimina las dos objeciones principales.</div>
+      <div class="hook-label">Frío — Historia / Origen (Ring 1 · Ring 5)</div>
+      <div class="hook-text">"This chair was designed in Buenos Aires in 1938. It's been in living rooms across the world ever since."</div>
     </div>
     <div class="hook-card blue">
-      <div class="hook-number">Ángulo: Par de sillas</div>
-      <div class="hook-text">"One looks good. Two looks intentional. Free shipping on both."</div>
-      <div class="hook-desc">Upsell natural — quien compra una, compra dos. La foto del par de sillas de cognac en living lo demuestra visualmente.</div>
+      <div class="hook-label">Frío — Calidad vs India (Ring 2 · Ring 5)</div>
+      <div class="hook-text">"Most 'leather' butterfly chairs online are bonded leather from India. This one isn't."</div>
+    </div>
+    <div class="hook-card blue">
+      <div class="hook-label">Frío — Close-up sensorial (Ring 2)</div>
+      <div class="hook-text">"You can feel the difference between real cowhide and fake leather. Watch."</div>
+    </div>
+    <div class="hook-card green">
+      <div class="hook-label">Tibio — Prueba social (Ring 3)</div>
+      <div class="hook-text">"I ordered this on Wednesday. It was in my living room by Friday. From Greenville, SC."</div>
+    </div>
+    <div class="hook-card green">
+      <div class="hook-label">Tibio — Transformación (Ring 3)</div>
+      <div class="hook-text">"My apartment went from 'fine' to 'wait, did you redecorate?' with one chair."</div>
+    </div>
+    <div class="hook-card orange">
+      <div class="hook-label">Caliente — Precio directo (Ring 4)</div>
+      <div class="hook-text">"$500. Real cowhide. Ships from the USA. That's the pitch."</div>
+    </div>
+    <div class="hook-card orange">
+      <div class="hook-label">Caliente — Justificador lógico (Ring 5)</div>
+      <div class="hook-text">"Full-grain cowhide. Forged iron frame. Argentine Hardoy design. $500 shipped from Greenville."</div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════ COPY ═══════ -->
-<section id="copy">
-  <div class="section-title"><span>✍️</span> Framework de Copy — Meta Ads</div>
-  <div class="section-sub">Formato de los dos textos principales + títulos — aplicar a todos los creativos</div>
-
-  <div class="grid-2">
-    <div class="card">
-      <div style="font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;">Texto 1 — Lógico / Directo</div>
-      <div style="background:var(--bg3);border-radius:8px;padding:14px;margin-bottom:12px;font-size:13px;line-height:1.8;color:#cbd5b8;font-style:italic;">
-        🪑 Genuine leather. Black iron frame. Ships in 48h.<br><br>
-        ✅ Original Argentine design — crafted since 1938<br>
-        ✅ 100% cowhide leather — gets better with age<br>
-        ✅ Hand-stitched frame — folds flat in 4 pieces<br>
-        ✅ Free US shipping from Greenville, SC<br><br>
-        Black or cognac. $500 — limited stock.
-      </div>
-      <div style="font-size:12px;color:var(--muted);">Gancho + bullets con emojis + precio claro + CTA. Todo en un bloque, listo para pegar en Meta.</div>
-    </div>
-    <div class="card">
-      <div style="font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;">Texto 2 — Emocional / Historia</div>
-      <div style="background:var(--bg3);border-radius:8px;padding:14px;margin-bottom:12px;font-size:13px;line-height:1.8;color:#cbd5b8;font-style:italic;">
-        Three architects sat down in Buenos Aires in 1938 with one goal: design a chair that was beautiful, comfortable, and timeless.<br><br>
-        They called it the BKF.<br><br>
-        Decades later, it's still the chair that changes a room. Real cowhide leather that develops a patina over time. An iron frame that folds in seconds.<br><br>
-        Ships in 48h. Free to your door.<br><br>
-        👇 Choose your color below.
-      </div>
-      <div style="font-size:12px;color:var(--muted);">Historia → producto → CTA. Para quien necesita conectar antes de comprar.</div>
-    </div>
-  </div>
-
-  <div class="card" style="margin-top:16px;">
-    <div style="font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;">Títulos (Headlines) — máx 40 caracteres</div>
-    <div class="grid-2">
-      <div>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Título 1 — Claridad directa</div>
-        <div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:700;color:var(--text);">"Genuine Leather. Ships in 48h. 🪑"</div>
-        <div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:700;color:var(--text);margin-top:6px;">"Handcrafted Since 1938 — $500 🇦🇷"</div>
-      </div>
-      <div>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Título 2 — Urgencia / Social proof</div>
-        <div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:700;color:var(--text);">"Limited Stock — Order Today ⚡"</div>
-        <div style="background:var(--bg3);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:700;color:var(--text);margin-top:6px;">"500+ Homes Love This Chair ⭐"</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ ESTRUCTURA ADS ═══════ -->
-<section id="estructura">
+<!-- ═══════ CAMPAÑA ═══════ -->
+<section id="campana">
   <div class="section-title"><span>⚙️</span> Estructura de Campaña Meta Ads</div>
-  <div class="section-sub">Cómo armar las campañas desde cero — nivel de consciencia por ad set</div>
+  <div class="section-sub">Cómo arrancar — simple y probado</div>
 
   <div class="camp-block">
     <div class="camp-header">
-      <div style="width:36px;height:36px;border-radius:8px;background:rgba(196,136,42,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;">🚀</div>
-      <h3>Campaña 1 — Advantage+ Shopping (principal)</h3>
-      <span class="budget">$50/día para arrancar</span>
+      <span style="font-size:18px;">❄️</span>
+      <h3>Campaña 1 — Prospección Fría</h3>
+      <span class="budget">$50–70/día</span>
     </div>
     <div class="camp-body">
       <div class="adset-row">
-        <div><div class="adset-name">Ad Set Principal</div><div class="adset-pain">Meta optimiza automáticamente — frío + tibio + retargeting</div></div>
+        <div>
+          <div class="adset-name">Advantage+ Shopping</div>
+          <div class="adset-pain">Dejar que Meta optimice audiencia</div>
+        </div>
         <div class="creative-list">
-          <span class="creative-pill cp-n1">N1 — Lifestyle ambiente (imagen)</span>
-          <span class="creative-pill cp-n2">N2 — Close-up cuero (video 10s)</span>
-          <span class="creative-pill cp-n3">N3 — Before/After del cuarto</span>
+          <span class="cp-ring r1">Ring 1 — UGC lifestyle</span>
+          <span class="cp-ring r2">Ring 2 — Close-up cuero</span>
+          <span class="cp-ring r5">Ring 5 — Features estático</span>
         </div>
       </div>
-      <div style="padding:12px;background:rgba(196,136,42,0.06);border-radius:8px;font-size:12px;color:#c4a870;margin-top:8px;">
-        <strong>Por qué Advantage+:</strong> Para furniture, este formato supera al manual targeting en ROAS promedio. Meta aprende quién está en modo "decorando" y lo encuentra solo. Dejar correr mínimo 7 días sin tocar.
+      <div class="adset-row">
+        <div>
+          <div class="adset-name">Intereses manuales</div>
+          <div class="adset-pain">Interior design · MCM furniture · Leather goods</div>
+        </div>
+        <div class="creative-list">
+          <span class="cp-ring r1">Ring 1 — UGC aspiracional</span>
+          <span class="cp-ring r2">Ring 2 — Demo sensorial</span>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="camp-block">
-    <div class="camp-header">
-      <div style="width:36px;height:36px;border-radius:8px;background:rgba(96,165,250,0.2);display:flex;align-items:center;justify-content:center;font-size:16px;">🔁</div>
-      <h3>Campaña 2 — Retargeting (activar en semana 3)</h3>
-      <span class="budget">$20/día</span>
+    <div class="camp-header" style="background:linear-gradient(90deg, rgba(74,222,128,0.08), transparent);">
+      <span style="font-size:18px;">🔁</span>
+      <h3>Campaña 2 — Retargeting</h3>
+      <span class="budget" style="color:#fb923c;background:rgba(251,146,60,0.1);border-color:rgba(251,146,60,0.2);">$15–20/día</span>
     </div>
     <div class="camp-body">
       <div class="adset-row">
-        <div><div class="adset-name">Visitantes 30d + ATC 7d</div><div class="adset-pain">Ya vieron la silla — necesitan un empujón</div></div>
+        <div>
+          <div class="adset-name">Visitaron la web</div>
+          <div class="adset-pain">Últimos 30 días, no compraron</div>
+        </div>
         <div class="creative-list">
-          <span class="creative-pill cp-n4">N4 — UGC review + "Ships in 48h"</span>
-          <span class="creative-pill cp-n4">N4 — Imagen par de sillas + "Free shipping"</span>
-        </div>
-      </div>
-      <div class="adset-row">
-        <div><div class="adset-name">Checkout iniciado 3d</div><div class="adset-pain">Los más calientes — urgencia máxima</div></div>
-        <div class="creative-list">
-          <span class="creative-pill cp-n5">N5 — "Limited stock. Order now." + precio</span>
-          <span class="creative-pill cp-n5">N5 — Dynamic ad con la silla que vio</span>
+          <span class="cp-ring r3">Ring 3 — Testimonial</span>
+          <span class="cp-ring r4">Ring 4 — Oferta directa</span>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="grid-3" style="margin-top:16px;">
-    <div class="card">
-      <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;">Budget para arrancar</div>
-      <div style="font-size:24px;font-weight:800;color:var(--win);">$70/día</div>
-      <div style="font-size:12px;color:var(--muted);">$50 Advantage+ + $20 retargeting. Subir 20% cada 3–4 días si ROAS está bien.</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;">
+    <div class="card" style="text-align:center;">
+      <div style="font-size:24px;font-weight:800;color:var(--accent);">$85</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">CPA objetivo</div>
+      <div style="font-size:12px;color:#94856e;margin-top:4px;">$115 de margen neto/venta</div>
     </div>
-    <div class="card">
-      <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;">CPA objetivo</div>
-      <div style="font-size:24px;font-weight:800;color:var(--warn);">$60–100</div>
-      <div style="font-size:12px;color:var(--muted);">Con $500 de venta y $300 de costo, el negocio aguanta hasta $150 de CPA y sigue rentable.</div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:24px;font-weight:800;color:var(--warn);">5.9x</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">ROAS objetivo</div>
+      <div style="font-size:12px;color:#94856e;margin-top:4px;">Breakeven: 2.5x</div>
     </div>
-    <div class="card">
-      <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;">ROAS objetivo</div>
-      <div style="font-size:24px;font-weight:800;color:var(--accent);">4–6x</div>
-      <div style="font-size:12px;color:var(--muted);">Benchmark estándar para furniture en Meta. Casos documentados de 8x–29x con producto bien posicionado.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ LA TIENDA ═══════ -->
-<section id="tienda">
-  <div class="section-title"><span>🛒</span> La Tienda — Qué Necesita para Convertir</div>
-  <div class="section-sub">Una-product store Shopify optimizada para $500 AOS — estructura completa</div>
-
-  <div class="grid-2" style="margin-bottom:20px;">
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Stack tecnológico</div>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div style="display:flex;gap:10px;align-items:flex-start;padding-bottom:10px;border-bottom:1px solid var(--border);">
-          <div style="width:32px;height:32px;min-width:32px;background:rgba(74,222,128,0.12);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;">🛒</div>
-          <div><div style="font-size:13px;font-weight:700;">Shopify — $39/mes</div><div style="font-size:12px;color:var(--muted);">One-product store, checkout optimizado, integración Meta Pixel nativa</div></div>
-        </div>
-        <div style="display:flex;gap:10px;align-items:flex-start;padding-bottom:10px;border-bottom:1px solid var(--border);">
-          <div style="width:32px;height:32px;min-width:32px;background:rgba(74,222,128,0.12);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;">📧</div>
-          <div><div style="font-size:13px;font-weight:700;">Klaviyo — free hasta 250 contactos</div><div style="font-size:12px;color:var(--muted);">Abandoned cart + post-purchase. En furniture recupera 15–25% de ATC.</div></div>
-        </div>
-        <div style="display:flex;gap:10px;align-items:flex-start;padding-bottom:10px;border-bottom:1px solid var(--border);">
-          <div style="width:32px;height:32px;min-width:32px;background:rgba(74,222,128,0.12);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;">⭐</div>
-          <div><div style="font-size:13px;font-weight:700;">Loox o Judge.me</div><div style="font-size:12px;color:var(--muted);">Reviews con fotos — crítico para $500. Social proof visual en el PDP.</div></div>
-        </div>
-        <div style="display:flex;gap:10px;align-items:flex-start;">
-          <div style="width:32px;height:32px;min-width:32px;background:rgba(74,222,128,0.12);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;">💳</div>
-          <div><div style="font-size:13px;font-weight:700;">Shop Pay + Affirm</div><div style="font-size:12px;color:var(--muted);">Financiamiento en cuotas — reduce fricción en $500+. Sube CR un 20–30%.</div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Estructura de la landing page</div>
-      <div style="display:flex;flex-direction:column;gap:12px;">
-        <div class="arc-step">
-          <div class="arc-num">1</div>
-          <div class="arc-content"><h4>Hero — foto lifestyle principal</h4><p>La silla en ambiente ideal. Headline: "Original Argentine Leather Chair — Since 1938". CTA visible sin scroll. Reviews count arriba del fold.</p></div>
-        </div>
-        <div class="arc-step">
-          <div class="arc-num">2</div>
-          <div class="arc-content"><h4>Selector color + precio claro</h4><p>Negro / Cognac. Precio $500 + "Free US shipping" en verde. Sin ambigüedad.</p></div>
-        </div>
-        <div class="arc-step">
-          <div class="arc-num">3</div>
-          <div class="arc-content"><h4>Story section — la historia del diseño</h4><p>"Buenos Aires, 1938." Tres párrafos máximo. Justifica el precio, crea conexión emocional.</p></div>
-        </div>
-        <div class="arc-step">
-          <div class="arc-num">4</div>
-          <div class="arc-content"><h4>Sección de materiales (close-ups)</h4><p>Cuero vacuno genuino · Costura a mano · Hierro negro de alta resistencia. Fotos en zoom.</p></div>
-        </div>
-        <div class="arc-step">
-          <div class="arc-num">5</div>
-          <div class="arc-content"><h4>Reviews con fotos (mínimo 10)</h4><p>La silla en el hogar del cliente. Es lo que más convierte en furniture — ver la silla en casas reales.</p></div>
-        </div>
-        <div class="arc-step">
-          <div class="arc-num">6</div>
-          <div class="arc-content"><h4>FAQ + Garantía</h4><p>"¿Cuánto tarda?" / "¿Es cuero real?" / "¿Cómo se arma?" + Garantía 30 días.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="info-box">
-    <strong>Pixel:</strong> Crear un pixel NUEVO en el Business Manager de TSF. Conectarlo solo a la tienda de las sillas. Las audiencias y datos quedan 100% separados de TSF pero siguen en la misma cuenta publicitaria — lo mejor de los dos mundos.
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ═══════ DO / DON'T ═══════ -->
-<section id="dodont">
-  <div class="section-title"><span>✅</span> DO / DON'T — Reglas del Negocio</div>
-  <div class="section-sub">Lo que sí y lo que no — basado en lo que funciona en furniture en Meta Ads</div>
-
-  <div class="do-dont">
-    <div class="do-card">
-      <h3>✅ Hacer siempre</h3>
-      <ul class="do-list">
-        <li>Fotografiar la silla en ambientes reales con luz natural — no sobre fondo blanco</li>
-        <li>Mostrar el par de sillas juntas — genera deseo de comprar dos</li>
-        <li>Poner el precio visible en los ads — filtra curiosos y mejora la calidad del tráfico</li>
-        <li>Mencionar "Ships from the US" — reduce la fricción de quien teme tiempos de envío largos</li>
-        <li>Usar la historia argentina como diferenciador — es única y nadie más la tiene igual</li>
-        <li>Dejar la campaña de Advantage+ correr mínimo 7 días sin cambios</li>
-        <li>Recopilar reviews con fotos desde la primera venta — pedírselas activamente a los compradores</li>
-        <li>Ofrecer Affirm/cuotas — furniture de $500 convierte 20–30% más con financiamiento</li>
-        <li>Mantener pixel de TSF y pixel de sillas completamente separados</li>
-      </ul>
-    </div>
-    <div class="dont-card">
-      <h3>✗ No hacer nunca</h3>
-      <ul class="dont-list">
-        <li>Poner la silla sobre fondo blanco como foto principal — no convierte en este nicho</li>
-        <li>Tocar la campaña antes de 7 días — el algoritmo necesita tiempo para aprender</li>
-        <li>Subir presupuesto más del 20% en un mismo día — reinicia el aprendizaje</li>
-        <li>Mezclar el tráfico de sillas con el pixel de TSF — contamina ambos negocios</li>
-        <li>Prometer envío en 2 días si no pueden cumplirlo — destruye reviews y genera chargebacks</li>
-        <li>Escalar antes de tener al menos 20 ventas — sin datos no hay ROAS real</li>
-        <li>Copiar copy de competidores de India que no tienen la historia argentina — es el diferencial real</li>
-        <li>Vender en Amazon al principio — baja el precio percibido y destroza el margen</li>
-        <li>Usar fotos de Instagram del producto sin pedir permiso para los ads — siempre conseguir autorización</li>
-      </ul>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:24px;font-weight:800;color:var(--win);">3–5</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">Creativos activos</div>
+      <div style="font-size:12px;color:#94856e;margin-top:4px;">Uno por anillo como mínimo</div>
     </div>
   </div>
 </section>
@@ -971,120 +520,112 @@
 <!-- ═══════ FINANZAS ═══════ -->
 <section id="finanzas">
   <div class="section-title"><span>💰</span> Proyección Financiera</div>
-  <div class="section-sub">Los números reales — qué entra, qué sale, qué queda</div>
+  <div class="section-sub">Números reales — qué entra, qué sale, qué queda</div>
 
   <div class="grid-2" style="margin-bottom:20px;">
     <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — Caso conservador (CPA $100)</div>
+      <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — CPA $100</div>
       <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta (promedio)</span><span style="font-weight:700;color:var(--win);">+ $600</span></div>
+        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:var(--win);">+ $500</span></div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Costo del producto</span><span style="font-weight:700;color:var(--lose);">– $300</span></div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">CPA (costo de adquisición)</span><span style="font-weight:700;color:var(--lose);">– $100</span></div>
-        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$200 / venta</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$100 / venta</span></div>
       </div>
     </div>
     <div class="card">
-      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — Caso optimizado (CPA $60)</div>
+      <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Por venta — CPA $60 (optimizado)</div>
       <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta (promedio)</span><span style="font-weight:700;color:var(--win);">+ $600</span></div>
+        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Precio de venta</span><span style="font-weight:700;color:var(--win);">+ $500</span></div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">Costo del producto</span><span style="font-weight:700;color:var(--lose);">– $300</span></div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;"><span style="color:var(--muted);">CPA (costo de adquisición)</span><span style="font-weight:700;color:var(--lose);">– $60</span></div>
-        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$240 / venta</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;font-size:15px;"><span style="font-weight:700;">GANANCIA NETA</span><span style="font-weight:800;color:var(--win);">$140 / venta</span></div>
       </div>
     </div>
   </div>
 
   <div class="card">
-    <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Proyección mensual — con $70/día en ads ($2,100/mes)</div>
+    <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">Proyección mensual — $70/día en ads ($2,100/mes)</div>
     <table class="bench-table">
       <thead>
-        <tr><th>Escenario</th><th>Ventas/mes</th><th>Revenue bruto</th><th>Ganancia neta negocio</th><th>Luca (25%)</th><th>Manuel (75%)</th></tr>
+        <tr><th>Escenario</th><th>Ventas/mes</th><th>Revenue bruto</th><th>Ganancia neta negocio</th><th>Algoritmia (25%)</th><th>Manuel (75%)</th></tr>
       </thead>
       <tbody>
-        <tr><td>Conservador (CPA $100)</td><td>~21</td><td>~$12,600</td><td class="avg">~$4,200</td><td>~$1,050/mes</td><td>~$3,150/mes</td></tr>
-        <tr><td>Realista (CPA $80)</td><td>~26</td><td>~$15,600</td><td class="good">~$5,720</td><td>~$1,430/mes</td><td>~$4,290/mes</td></tr>
-        <tr><td>Optimizado (CPA $60)</td><td>~35</td><td>~$21,000</td><td class="good">~$8,400</td><td>~$2,100/mes</td><td>~$6,300/mes</td></tr>
+        <tr><td>Conservador (CPA $100)</td><td>~21</td><td>~$10,500</td><td class="avg">~$2,100</td><td>~$525/mes</td><td>~$1,575/mes</td></tr>
+        <tr><td>Realista (CPA $80)</td><td>~26</td><td>~$13,000</td><td class="good">~$3,120</td><td>~$780/mes</td><td>~$2,340/mes</td></tr>
+        <tr><td>Optimizado (CPA $60)</td><td>~35</td><td>~$17,500</td><td class="good">~$4,900</td><td>~$1,225/mes</td><td>~$3,675/mes</td></tr>
       </tbody>
     </table>
-    <div style="margin-top:12px;font-size:12px;color:var(--muted);">* Precio de venta: $450–$750 según variante/color. Cálculo con promedio $600. ROAS mínimo breakeven: 2.5x. ROAS objetivo: 4–6x.</div>
+    <div style="margin-top:12px;font-size:12px;color:var(--muted);">* ROAS mínimo breakeven: 2.5x. ROAS objetivo: 5–6x. Costo fijo: $300/silla puesto en Greenville.</div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════ PLAN DE ACCIÓN ═══════ -->
+<!-- ═══════ PLAN ═══════ -->
 <section id="plan">
-  <div class="section-title"><span>🗓️</span> Plan de Acción — Semana a Semana</div>
-  <div class="section-sub">Qué hacer, en qué orden, quién lo hace</div>
+  <div class="section-title"><span>🗓️</span> Plan de Acción</div>
+  <div class="section-sub">En qué orden arrancar</div>
 
   <div class="grid-2">
-    <div>
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-week">Esta semana — Fundación</div>
-          <div class="tl-title">Confirmar stock + dominio + fotos</div>
-          <div class="tl-desc">Manuel confirma cuántas sillas hay en Greenville. Elegir nombre y comprar dominio juntos. Manuel envía fotos del catálogo + fotos nuevas en ambiente real con luz natural.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-week">Semana 2 — Tienda</div>
-          <div class="tl-title">Armar Shopify + cargar producto</div>
-          <div class="tl-desc">Crear tienda nueva en Shopify. Tema limpio. Cargar sillas con variantes (negro / cognac), precio $500, descripción en inglés, historia del diseño, FAQ, políticas de envío y devolución.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-week">Semana 3 — Tracking y flows</div>
-          <div class="tl-title">Pixel + Klaviyo</div>
-          <div class="tl-desc">Crear pixel nuevo en Business Manager de TSF. Conectar al Shopify. Verificar que ViewContent, AddToCart y Purchase disparan bien. Conectar Klaviyo — armar abandoned cart flow (3 emails).</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-week">Semana 4 — Lanzamiento</div>
-          <div class="tl-title">3 creativos + Campaña Advantage+</div>
-          <div class="tl-desc">Producir 3 creativos: foto lifestyle en ambiente, video close-up del cuero (15s), imagen del par de sillas. Lanzar Advantage+ Shopping $50/día. No tocar nada en los primeros 7 días.</div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-week">Mes 2 — Optimización</div>
-          <div class="tl-title">Escalar + retargeting + UGC</div>
-          <div class="tl-desc">Analizar ROAS y CPA real. Escalar lo que funciona 20% cada 3–4 días. Activar retargeting $20/día. Pedir reviews con fotos a los primeros compradores. Crear UGC propio si hay material.</div>
-        </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-week">Semana 1 — Fundación</div>
+        <div class="tl-title">Nombre + dominio + Shopify</div>
+        <div class="tl-desc">Definir el nombre final (¿Nardelli Design?), comprar dominio, crear cuenta Shopify nueva separada de TSF.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">Semana 1–2 — Producto</div>
+        <div class="tl-title">Cargar fotos y productos</div>
+        <div class="tl-desc">Manuel manda las fotos y el material. Luca sube los productos, escribe las descripciones, configura la landing page.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">Semana 2 — Tracking</div>
+        <div class="tl-title">Pixel nuevo en Meta</div>
+        <div class="tl-desc">Crear pixel nuevo en la cuenta de Meta de TSF. Instalar en Shopify. Verificar conversiones antes de poner un dólar en ads.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">Semana 2–3 — Creativos</div>
+        <div class="tl-title">Grabar Ring 1 + Ring 2 antes de lanzar</div>
+        <div class="tl-desc">UGC básico con la silla en ambiente real. Close-up del cuero. Son los dos creativos que se necesitan para arrancar.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-week">Semana 3 — Lanzamiento</div>
+        <div class="tl-title">Campaña Advantage+ + intereses</div>
+        <div class="tl-desc">Arrancar con $50/día. Mínimo 7–10 días antes de sacar conclusiones. Objetivo: primer CPA bajo $150.</div>
       </div>
     </div>
 
-    <div>
-      <div class="card" style="margin-bottom:16px;">
-        <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px;">División de responsabilidades</div>
-        <table class="bench-table">
-          <thead><tr><th>Tarea</th><th>Quién</th></tr></thead>
-          <tbody>
-            <tr><td>Confirmar stock y medidas</td><td style="font-weight:700;color:#60a5fa;">Manuel</td></tr>
-            <tr><td>Fotos en ambiente real</td><td style="font-weight:700;color:#60a5fa;">Manuel</td></tr>
-            <tr><td>Despachar pedidos desde Greenville</td><td style="font-weight:700;color:#60a5fa;">Manuel</td></tr>
-            <tr><td>Elegir nombre / dominio</td><td style="font-weight:700;color:var(--warn);">Los dos</td></tr>
-            <tr><td>Shopify — setup completo</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Copy en inglés (producto + páginas)</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Pixel nuevo + verificación</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Klaviyo — abandoned cart flow</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Creativos de ads (diseño + copy)</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Lanzamiento y gestión de campañas</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-            <tr><td>Reportes mensuales de resultados</td><td style="font-weight:700;color:var(--accent);">Luca</td></tr>
-          </tbody>
-        </table>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div class="warn-box">
+        <strong>Bloqueadores actuales</strong><br><br>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+          <div style="display:flex;gap:8px;font-size:13px;"><span style="color:var(--lose);font-weight:700;flex-shrink:0;">1.</span><span><strong>Fotos en ambiente real</strong> — sin buenas fotos no hay ads que funcionen. Es el activo más importante.</span></div>
+          <div style="display:flex;gap:8px;font-size:13px;"><span style="color:var(--warn);font-weight:700;flex-shrink:0;">2.</span><span><strong>Cantidad de stock</strong> — define cuánto podemos gastar en ads sin quedarnos sin sillas.</span></div>
+          <div style="display:flex;gap:8px;font-size:13px;"><span style="color:var(--accent);font-weight:700;flex-shrink:0;">3.</span><span><strong>Nombre de la tienda</strong> — todo lo demás (dominio, branding, copy) depende de esto.</span></div>
+        </div>
       </div>
 
       <div class="card">
-        <div style="font-size:13px;font-weight:700;color:var(--win);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Lo que bloquea todo hasta que esté</div>
+        <div style="font-size:13px;font-weight:700;color:var(--muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">Quién hace qué</div>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-radius:8px;padding:10px 12px;font-size:13px;"><strong style="color:#f87171;">1.</strong> <strong>Fotos de la silla en ambiente</strong> — sin buenas fotos no hay ads que funcionen. Es el activo más importante del negocio.</div>
-          <div style="background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.2);border-radius:8px;padding:10px 12px;font-size:13px;"><strong style="color:var(--warn);">2.</strong> <strong>Cantidad exacta de stock</strong> — define cuánto podemos gastar en ads sin quedarnos sin sillas antes de reponer.</div>
-          <div style="background:rgba(196,136,42,0.06);border:1px solid rgba(196,136,42,0.2);border-radius:8px;padding:10px 12px;font-size:13px;"><strong style="color:var(--accent);">3.</strong> <strong>Nombre de la tienda</strong> — todo lo demás (dominio, branding, copy) depende de esto.</div>
+          <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start;">
+            <span style="background:rgba(196,136,42,0.15);color:#C4882A;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;flex-shrink:0;">Algoritmia</span>
+            <span style="color:#94856e;">Shopify · Pixel · Ads · Creativos · Estrategia · Reportes</span>
+          </div>
+          <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start;">
+            <span style="background:rgba(74,222,128,0.1);color:#4ade80;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;flex-shrink:0;">Manuel</span>
+            <span style="color:#94856e;">Stock · Logística · Fotos · Envíos · Atención al cliente</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-</div><!-- /container -->
+</div>
 
 <div style="text-align:center;padding:30px 20px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:20px;">
-  Algoritmia · lucagazze1@gmail.com · Mayo 2026 · Documento confidencial — BKF Leather Chair USA
+  Algoritmia · lucagazze1@gmail.com · Mayo 2026 · Documento confidencial — Nardelli Design BKF Chair USA
 </div>
 
 </body>
