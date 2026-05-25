@@ -25,8 +25,10 @@
     background: linear-gradient(135deg, #1a1008 0%, #10100c 50%, #0c0c10 100%);
     border-bottom: 1px solid var(--border);
     padding: 48px 40px 36px;
+    margin-top: 47px;
     position: relative; overflow: hidden;
   }
+  @media (max-width: 768px) { .hero { margin-top: 45px; } }
   .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(240,160,48,0.1) 0%, transparent 65%); pointer-events: none; }
   .hero h1 { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, #F0A030, #fcd588, #c47d1e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; }
   .hero p { color: #7a7060; font-size: 15px; }
@@ -40,10 +42,28 @@
   .tag-muted { background: rgba(107,101,116,0.15); color: #8b8494; border: 1px solid rgba(107,101,116,0.3); }
   .tag-red { background: rgba(248,113,113,0.1); color: #f87171; border: 1px solid rgba(248,113,113,0.25); }
 
-  nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; position: sticky; top: 0; z-index: 100; }
-  nav::-webkit-scrollbar { display: none; }
+  nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; gap: 2px; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+  .nav-links { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; }
+  .nav-links::-webkit-scrollbar { display: none; }
   nav a { color: var(--muted); text-decoration: none; padding: 14px 13px; font-size: 12px; font-weight: 600; letter-spacing: 0.4px; white-space: nowrap; border-bottom: 2px solid transparent; transition: all 0.2s; }
   nav a:hover { color: var(--text); border-bottom-color: var(--accent); }
+
+  .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 10px; color: var(--text); flex-direction: column; gap: 5px; margin-left: auto; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.25s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-menu { display: none; position: fixed; top: 45px; left: 0; right: 0; background: var(--bg2); border-bottom: 1px solid var(--border); z-index: 999; padding: 8px 0; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a { display: block; color: var(--muted); text-decoration: none; padding: 13px 24px; font-size: 14px; font-weight: 600; border-left: 3px solid transparent; transition: all 0.15s; }
+  .mobile-menu a:hover { color: var(--text); border-left-color: var(--accent); background: rgba(240,160,48,0.05); }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    nav { padding: 0 16px; height: 45px; }
+  }
 
   .container { max-width: 1340px; margin: 0 auto; padding: 44px 40px; }
   section { margin-bottom: 64px; }
@@ -165,17 +185,50 @@
 </div>
 
 <nav>
-  <a href="#resumen">📊 Resumen</a>
-  <a href="#mercado">🗺️ Mercado</a>
-  <a href="#competidores">🏆 Competidores</a>
-  <a href="#instagram">📸 Instagram</a>
-  <a href="#anillos">🎬 5 Anillos</a>
-  <a href="#audiencias">🎯 Audiencias</a>
-  <a href="#hooks">🪝 Hooks</a>
-  <a href="#campana">⚙️ Ads</a>
-  <a href="#finanzas">💰 Finanzas</a>
-  <a href="#plan">🗓️ Plan</a>
+  <div class="nav-links">
+    <a href="#resumen">📊 Resumen</a>
+    <a href="#mercado">🗺️ Mercado</a>
+    <a href="#competidores">🏆 Competidores</a>
+    <a href="#instagram">📸 Instagram</a>
+    <a href="#anillos">🎬 5 Anillos</a>
+    <a href="#audiencias">🎯 Audiencias</a>
+    <a href="#hooks">🪝 Hooks</a>
+    <a href="#campana">⚙️ Ads</a>
+    <a href="#finanzas">💰 Finanzas</a>
+    <a href="#plan">🗓️ Plan</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#resumen" class="mobile-link">📊 Resumen</a>
+  <a href="#mercado" class="mobile-link">🗺️ Mercado</a>
+  <a href="#competidores" class="mobile-link">🏆 Competidores</a>
+  <a href="#instagram" class="mobile-link">📸 Instagram</a>
+  <a href="#anillos" class="mobile-link">🎬 5 Anillos</a>
+  <a href="#audiencias" class="mobile-link">🎯 Audiencias</a>
+  <a href="#hooks" class="mobile-link">🪝 Hooks</a>
+  <a href="#campana" class="mobile-link">⚙️ Ads</a>
+  <a href="#finanzas" class="mobile-link">💰 Finanzas</a>
+  <a href="#plan" class="mobile-link">🗓️ Plan</a>
+</div>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      btn.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
+</script>
 
 <div class="container">
 
