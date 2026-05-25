@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis de Mercado — Leather Butterfly Chair USA</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f0f0f; color: #e8e8e8; line-height: 1.6; }
+
+  /* HEADER */
+  .hero {
+    background: linear-gradient(135deg, #1a1008 0%, #2d1a08 40%, #1a0f05 100%);
+    border-bottom: 1px solid #8B5E2A;
+    padding: 60px 40px;
+    text-align: center;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: #8B5E2A;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+  }
+  .hero h1 span { color: #C4882A; }
+  .hero p {
+    font-size: 17px;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero-date {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 1px;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  /* SECTION TITLES */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C4882A;
+    margin-bottom: 8px;
+  }
+  .section-heading {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  /* CARDS */
+  .card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+  .card:hover { border-color: #8B5E2A; transition: border-color 0.2s; }
+
+  /* GRID */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  @media(max-width:768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+  /* STATS ROW */
+  .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media(max-width:768px) { .stats-row { grid-template-columns: 1fr 1fr; } }
+  .stat-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-value { font-size: 30px; font-weight: 800; color: #C4882A; }
+  .stat-label { font-size: 12px; color: #777; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* COMPETITOR TABLE */
+  .comp-table { width: 100%; border-collapse: collapse; }
+  .comp-table thead th {
+    background: #1f1a14;
+    color: #C4882A;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+  .comp-table tbody tr {
+    border-bottom: 1px solid #1e1e1e;
+    transition: background 0.15s;
+  }
+  .comp-table tbody tr:hover { background: #1a1a1a; }
+  .comp-table tbody td {
+    padding: 14px 16px;
+    font-size: 14px;
+    color: #ccc;
+    vertical-align: middle;
+  }
+  .comp-table .brand { font-weight: 700; color: #fff; }
+  .comp-table a { color: #C4882A; text-decoration: none; font-size: 12px; }
+  .comp-table a:hover { text-decoration: underline; }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-green { background: #0d2e1a; color: #4ade80; border: 1px solid #166534; }
+  .badge-orange { background: #2d1a08; color: #fb923c; border: 1px solid #7c2d12; }
+  .badge-blue { background: #0d1f3c; color: #60a5fa; border: 1px solid #1e40af; }
+  .badge-red { background: #2d0d0d; color: #f87171; border: 1px solid #7f1d1d; }
+  .badge-gray { background: #1a1a1a; color: #999; border: 1px solid #333; }
+
+  /* AD LIBRARY LINKS */
+  .adlib-card {
+    background: linear-gradient(135deg, #0d1f3c, #0f172a);
+    border: 1px solid #1e40af;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .adlib-card h4 { color: #60a5fa; font-size: 16px; margin-bottom: 8px; }
+  .adlib-card p { color: #94a3b8; font-size: 14px; margin-bottom: 14px; }
+  .adlib-card a {
+    display: inline-block;
+    background: #1e40af;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+  .adlib-card a:hover { background: #2563eb; }
+
+  /* HOOK BOX */
+  .hook-box {
+    background: #0f1a0f;
+    border-left: 3px solid #4ade80;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #d1fae5;
+    font-style: italic;
+  }
+  .hook-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4ade80;
+    margin-bottom: 6px;
+    font-style: normal;
+  }
+
+  /* STRATEGY STEPS */
+  .step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: #C4882A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+  }
+  .step-content h4 { color: #fff; font-size: 16px; margin-bottom: 6px; }
+  .step-content p { color: #999; font-size: 14px; }
+
+  /* FUNNEL TABLE */
+  .funnel-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #1e1e1e;
+    align-items: center;
+  }
+  .funnel-row:last-child { border-bottom: none; }
+  .funnel-level { font-size: 13px; font-weight: 700; }
+  .funnel-col { font-size: 13px; color: #aaa; }
+  .funnel-header {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 4px;
+  }
+  .funnel-header span { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* FINANCIAL */
+  .fin-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #1e1e1e;
+    font-size: 14px;
+  }
+  .fin-row:last-child { border-bottom: none; }
+  .fin-label { color: #aaa; }
+  .fin-value { color: #fff; font-weight: 600; }
+  .fin-value.green { color: #4ade80; }
+  .fin-value.orange { color: #fb923c; }
+  .fin-highlight {
+    background: #0f2a0f;
+    border: 1px solid #166534;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .fin-highlight .amount { font-size: 36px; font-weight: 800; color: #4ade80; }
+  .fin-highlight .label { font-size: 13px; color: #86efac; margin-top: 4px; }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid #1e1e1e; margin: 40px 0; }
+
+  /* WARNING BOX */
+  .warning-box {
+    background: #1a1008;
+    border: 1px solid #8B5E2A;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #d6b073;
+  }
+  .warning-box strong { color: #C4882A; }
+
+  /* VERDICT */
+  .verdict {
+    background: linear-gradient(135deg, #0f2a1a, #0a1f12);
+    border: 1px solid #166534;
+    border-radius: 14px;
+    padding: 36px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .verdict h3 { font-size: 24px; color: #4ade80; margin-bottom: 12px; }
+  .verdict p { color: #86efac; font-size: 15px; max-width: 600px; margin: 0 auto; }
+
+  /* SEPARATOR */
+  .section-sep { margin: 50px 0; }
+
+  /* PILL TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .tag {
+    background: #1f1a14;
+    border: 1px solid #3d2e14;
+    color: #C4882A;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  /* PRODUCT CARD */
+  .product-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1e1e1e;
+    font-size: 14px;
+  }
+  .product-feature:last-child { border-bottom: none; }
+  .pf-icon { width: 32px; height: 32px; background: #2d1a08; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .pf-text { color: #ccc; }
+  .pf-text strong { color: #fff; display: block; font-size: 13px; }
+
+  /* FOOTER */
+  .footer { text-align: center; padding: 40px 20px; color: #444; font-size: 12px; border-top: 1px solid #1a1a1a; margin-top: 60px; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Análisis de Mercado</div>
+  <h1>BKF <span>Leather</span> Butterfly Chair</h1>
+  <p>Oportunidad de negocio en USA — Competidores, Ads, Estrategia y Proyecciones</p>
+  <div class="hero-date">Generado por Algoritmia · 25 Mayo 2026</div>
+</div>
+
+<div class="container">
+
+  <!-- STATS -->
+  <div style="margin: 40px 0 10px;">
+    <div class="section-title">Resumen Ejecutivo</div>
+    <div class="section-heading">El mercado en números</div>
+  </div>
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-value">$400–$600</div>
+      <div class="stat-label">Precio objetivo</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$150–$250</div>
+      <div class="stat-label">Costo estimado</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">3–5x</div>
+      <div class="stat-label">ROAS promedio furniture</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$200–$350</div>
+      <div class="stat-label">Margen bruto por venta</div>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <strong>Producto de alta oportunidad:</strong> La BKF Butterfly Chair es una pieza icónica de diseño argentino (1938) con demanda constante en USA. El mercado tiene competidores pero ninguno dominante. El nicho de cuero genuino con precio $400–$600 tiene un gap real entre los baratos ($189 Parrys) y los premium ($995+ Cuero Design).
+  </div>
+
+  <hr class="divider">
+
+  <!-- EL PRODUCTO -->
+  <div class="section-sep">
+    <div class="section-title">El Producto</div>
+    <div class="section-heading">BKF Butterfly Chair — Por qué funciona</div>
+    <div class="grid-2">
+      <div class="card">
+        <h3 style="color:#fff; margin-bottom:16px;">Características clave</h3>
+        <div class="product-feature">
+          <div class="pf-icon">🐄</div>
+          <div class="pf-text"><strong>Cuero genuino (vacuno)</strong>Envejece bien, se ve más premium con el tiempo</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🔩</div>
+          <div class="pf-text"><strong>Estructura de hierro negro</strong>Minimalista, desmontable en 4 piezas — fácil de enviar</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🎨</div>
+          <div class="pf-text"><strong>Colores disponibles</strong>Negro / Cognac (tan) — los dos más vendidos en USA</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🏠</div>
+          <div class="pf-text"><strong>Uso y contexto</strong>Living, lectura, home office, rincón decorativo</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🇦🇷</div>
+          <div class="pf-text"><strong>Diseño icónico argentino (1938)</strong>Jorge Ferrari-Hardoy — esto es historia que vende</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="color:#fff; margin-bottom:16px;">Por qué la gente lo compra en USA</h3>
+        <div class="product-feature">
+          <div class="pf-icon">✨</div>
+          <div class="pf-text"><strong>Statement piece</strong>No es una silla, es un punto focal del cuarto</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">📸</div>
+          <div class="pf-text"><strong>Super fotogénica</strong>Funciona perfectamente en Instagram/Pinterest — genera contenido orgánico</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">💎</div>
+          <div class="pf-text"><strong>Aspira a lo artesanal</strong>La gente paga más por "handmade" + "genuine leather" + "authentic design"</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🔄</div>
+          <div class="pf-text"><strong>Eterna — no pasa de moda</strong>MCM (Mid-Century Modern) lleva 10 años siendo tendencia en USA</div>
+        </div>
+        <div class="product-feature">
+          <div class="pf-icon">🎁</div>
+          <div class="pf-text"><strong>Regalo premium</strong>Casa nueva, cumpleaños, housewarming — compra impulsiva de alto valor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- COMPETIDORES -->
+  <div class="section-title">Análisis Competitivo</div>
+  <div class="section-heading">Quién vende esto en USA y a cuánto</div>
+
+  <div class="card" style="overflow-x:auto;">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Marca</th>
+          <th>Precio USD</th>
+          <th>Origen</th>
+          <th>Diferencial</th>
+          <th>Posicionamiento</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="brand">Big BKF</td>
+          <td>$380–$550</td>
+          <td>Argentina 🇦🇷</td>
+          <td>Original BKF, cuero vegetable tanned, envío FedEx 2 días</td>
+          <td><span class="badge badge-orange">Premium</span></td>
+          <td><a href="https://www.bigbkf.com" target="_blank">bigbkf.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Cuero Design</td>
+          <td>$995–$1,464</td>
+          <td>Suecia / Global 🌍</td>
+          <td>Luxury, marca establecida, diseño editorial</td>
+          <td><span class="badge badge-red">Luxury</span></td>
+          <td><a href="https://www.cuerodesign.com/products/leather-butterfly-chair" target="_blank">cuerodesign.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Calma Chicha</td>
+          <td>$230–$400</td>
+          <td>Argentina 🇦🇷</td>
+          <td>Original 1938, múltiples materiales (cuero, canvas, outdoor)</td>
+          <td><span class="badge badge-blue">Mid-Range</span></td>
+          <td><a href="https://calmachicha.com/us/leather-butterfly-chair/" target="_blank">calmachicha.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Parrys Leather World</td>
+          <td>$189–$280</td>
+          <td>India 🇮🇳</td>
+          <td>Cuero de cabra, precio bajo, envío gratis USA</td>
+          <td><span class="badge badge-gray">Budget</span></td>
+          <td><a href="https://parrysleatherworld.com/collections/butterfly-chairs" target="_blank">parrysleatherworld.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Hunters Hide</td>
+          <td>$250–$420</td>
+          <td>India 🇮🇳</td>
+          <td>Múltiples estilos, colores únicos (verde, cognac), envío rápido</td>
+          <td><span class="badge badge-blue">Mid-Range</span></td>
+          <td><a href="https://www.huntershide.store/category/butterfly-chair" target="_blank">huntershide.store ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Classy Leather Bags</td>
+          <td>$320–$450</td>
+          <td>India 🇮🇳</td>
+          <td>SEO fuerte, blog, múltiples colores</td>
+          <td><span class="badge badge-blue">Mid-Range</span></td>
+          <td><a href="https://classyleatherbags.com/collections/leather-butterfly-chairs" target="_blank">classyleatherbags.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Your Western Decor</td>
+          <td>$280–$380</td>
+          <td>USA 🇺🇸</td>
+          <td>Estilo western/rustic, cuero silla, frame acero inoxidable</td>
+          <td><span class="badge badge-blue">Mid-Range</span></td>
+          <td><a href="https://yourwesterndecorating.com/products/ywd-genuine-leather-butterfly-chair" target="_blank">yourwesterndecorating.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Saintstag</td>
+          <td>$350–$480</td>
+          <td>Global 🌍</td>
+          <td>Posicionamiento vintage/retro, estética curada</td>
+          <td><span class="badge badge-orange">Premium</span></td>
+          <td><a href="https://saintstag.com/product-category/vintage-leather-butterfly-chair/" target="_blank">saintstag.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand">Wayfair</td>
+          <td>$150–$350</td>
+          <td>USA 🇺🇸</td>
+          <td>Volumen masivo, envío Amazon-speed, reviews</td>
+          <td><span class="badge badge-gray">Mass Market</span></td>
+          <td><a href="https://www.wayfair.com/furniture/sb2/butterfly-chair-leather-accent-chairs-c416225-a469~470887-a471~4751.html" target="_blank">wayfair.com ↗</a></td>
+        </tr>
+        <tr>
+          <td class="brand" style="color:#C4882A;">👉 Tu producto</td>
+          <td style="color:#4ade80; font-weight:700;">$400–$600</td>
+          <td>Argentina 🇦🇷</td>
+          <td>Cuero vacuno genuino, diseño argentino, historia real, tienda propia</td>
+          <td><span class="badge badge-green">Oportunidad</span></td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="warning-box" style="margin-top:20px;">
+    <strong>Gap de mercado claro:</strong> Entre los $280–$380 de mid-range y los $995+ de luxury, hay un espacio vacío de $400–$700 con cuero genuino de calidad y marca sólida. Nadie lo está dominando todavía con Meta Ads pesados. Ese es tu espacio.
+  </div>
+
+  <hr class="divider">
+
+  <!-- META ADS LIBRARY -->
+  <div class="section-title">Meta Ad Library</div>
+  <div class="section-heading">Dónde ver los ads activos de la competencia</div>
+  <p style="color:#aaa; font-size:15px; margin-bottom:24px;">Estos son los links directos a Meta Ad Library para espiar qué están corriendo ahora mismo. Es la fuente más valiosa para ver creativos reales.</p>
+
+  <div class="adlib-card">
+    <h4>🔍 Búsqueda por keyword "butterfly chair"</h4>
+    <p>Todos los ads activos en USA que mencionan butterfly chair — incluye marcas que no conocés.</p>
+    <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=butterfly%20chair&search_type=keyword_unordered" target="_blank">Ver en Ad Library →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=leather%20butterfly%20chair&search_type=keyword_unordered" target="_blank">Ver "leather butterfly chair" →</a>
+  </div>
+
+  <div class="adlib-card">
+    <h4>🏢 Búsqueda por páginas de competidores</h4>
+    <p>Ver exactamente qué ads están corriendo cada marca. Copiar estructura, creativos y copy.</p>
+    <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&view_all_page_id=&q=Big+BKF&search_type=page" target="_blank">Big BKF →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=hunters+hide&search_type=page" target="_blank">Hunters Hide →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=parrys+leather&search_type=page" target="_blank">Parrys Leather →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&q=classy+leather+bags&search_type=page" target="_blank">Classy Leather Bags →</a>
+  </div>
+
+  <div class="adlib-card">
+    <h4>🛋️ Búsquedas relacionadas (home decor / accent chair)</h4>
+    <p>Para ver qué creativos funcionan en categorías adjacentes y robar ideas.</p>
+    <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=leather+accent+chair&search_type=keyword_unordered" target="_blank">leather accent chair →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=genuine+leather+chair&search_type=keyword_unordered" target="_blank">genuine leather chair →</a>
+    <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=BKF+chair&search_type=keyword_unordered" target="_blank">BKF chair →</a>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CÓMO HACEN LOS ADS -->
+  <div class="section-title">Estrategia Creativa</div>
+  <div class="section-heading">Cómo venden este producto los que lo hacen bien</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">📸 Creativos que funcionan</h3>
+      <div class="product-feature">
+        <div class="pf-icon">🏠</div>
+        <div class="pf-text"><strong>Lifestyle en ambiente real</strong>La silla en un rincón de lectura, junto a una planta, con luz natural. Outperforma foto sobre fondo blanco 2–4x.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🎥</div>
+        <div class="pf-text"><strong>UGC video (unboxing + setup)</strong>"Recibí esta silla de Argentina y así quedó en mi departamento" — funciona como review orgánica.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">✋</div>
+        <div class="pf-text"><strong>Close-up del cuero</strong>Mostrar las costuras, la textura, el color real — comunica autenticidad y calidad.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🔄</div>
+        <div class="pf-text"><strong>Before/After del cuarto</strong>"Así estaba mi living" → "Así quedó después de una sola compra." Muy efectivo en Facebook.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">👫</div>
+        <div class="pf-text"><strong>Par de sillas (upsell visual)</strong>Las dos sillas en el mismo cuarto — genera deseo de comprar dos unidades.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">🎯 Audiencias que funcionan en furniture</h3>
+      <div class="product-feature">
+        <div class="pf-icon">👤</div>
+        <div class="pf-text"><strong>Demografía core</strong>Mujeres y hombres 28–52 años, propietarios de vivienda, ingresos $75k+/año</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🏡</div>
+        <div class="pf-text"><strong>Intereses primarios</strong>Interior design, home decor, mid-century modern, Apartment Therapy, Architectural Digest</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🛋️</div>
+        <div class="pf-text"><strong>Intereses secundarios</strong>West Elm, CB2, Design Within Reach, Pottery Barn (compradores de muebles premium)</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🔁</div>
+        <div class="pf-text"><strong>Retargeting</strong>Visitantes web últimos 30 días, Add to Cart sin compra, lookalike de compradores</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">⚡</div>
+        <div class="pf-text"><strong>Advantage+ Shopping</strong>Para furniture es el default que funciona — dejar que Meta optimice audiences</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- HOOKS Y COPY -->
+  <div class="section-title">Copy & Hooks</div>
+  <div class="section-heading">Ángulos de venta que aplican al producto</div>
+
+  <div class="grid-2">
+    <div>
+      <p style="color:#aaa; font-size:13px; margin-bottom:16px; text-transform:uppercase; letter-spacing:1px;">FRÍO (N1–N2) — Awareness</p>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Historia / Diseño</div>
+        "Esta silla fue diseñada en Argentina en 1938. Hoy decora los mejores departamentos del mundo."
+      </div>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Contraste / Dolor</div>
+        "Gastaste $2,000 en tu sofá y tu cuarto sigue sintiéndose vacío. Una sola pieza lo cambia todo."
+      </div>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Aspiracional</div>
+        "El tipo de silla que ves en una revista. Resulta que la podés tener en tu casa por $479."
+      </div>
+    </div>
+    <div>
+      <p style="color:#aaa; font-size:13px; margin-bottom:16px; text-transform:uppercase; letter-spacing:1px;">CALIENTE (N3–N5) — Conversión</p>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Calidad vs. precio</div>
+        "Cuero genuino. Hierro forjado a mano. Diseño que dura 50 años. $479 — con envío gratis."
+      </div>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Escasez</div>
+        "Stock limitado. Cada silla se hace a mano en Buenos Aires. Si no la pedís hoy, puede no estar mañana."
+      </div>
+      <div class="hook-box">
+        <div class="hook-label">Ángulo: Social Proof</div>
+        "⭐⭐⭐⭐⭐ 'La mejor compra que hice para mi departamento' — Sandra, Austin TX"
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ESTRUCTURA DE CAMPAÑA -->
+  <div class="section-title">Estructura Meta Ads</div>
+  <div class="section-heading">Cómo montar la campaña desde cero</div>
+
+  <div class="card">
+    <div class="funnel-header">
+      <span>Nivel</span>
+      <span>Objetivo</span>
+      <span>Audiencia</span>
+      <span>Creativo</span>
+    </div>
+    <div class="funnel-row">
+      <div class="funnel-level"><span class="badge badge-gray">N1–N2</span></div>
+      <div class="funnel-col">Generar deseo — cold traffic</div>
+      <div class="funnel-col">Intereses: home decor, interior design, mid-century modern</div>
+      <div class="funnel-col">Video lifestyle (15s) + imagen ambiente real</div>
+    </div>
+    <div class="funnel-row">
+      <div class="funnel-level"><span class="badge badge-blue">N3</span></div>
+      <div class="funnel-col">Comparar / considerar</div>
+      <div class="funnel-col">Advantage+ Shopping o Lookalike 1–3%</div>
+      <div class="funnel-col">Carrusel (múltiples colores + close-up cuero)</div>
+    </div>
+    <div class="funnel-row">
+      <div class="funnel-level"><span class="badge badge-orange">N4</span></div>
+      <div class="funnel-col">Retargeting cálido</div>
+      <div class="funnel-col">Visitantes web 30d + Add to Cart sin compra</div>
+      <div class="funnel-col">UGC review + oferta (envío gratis / bundle)</div>
+    </div>
+    <div class="funnel-row">
+      <div class="funnel-level"><span class="badge badge-green">N5</span></div>
+      <div class="funnel-col">Cierre — BOFU</div>
+      <div class="funnel-col">ATC + Checkout iniciado últimos 7 días</div>
+      <div class="funnel-col">Dynamic ad o imagen con urgencia + CTA directo</div>
+    </div>
+  </div>
+
+  <div class="grid-3" style="margin-top:24px;">
+    <div class="card">
+      <h4 style="color:#C4882A; margin-bottom:10px;">Budget sugerido para arrancar</h4>
+      <p style="color:#aaa; font-size:14px;">$50–$80/día en fase de testing. Mínimo 7–14 días para datos. CBO (Campaign Budget Optimization) en el nivel de campaña.</p>
+    </div>
+    <div class="card">
+      <h4 style="color:#C4882A; margin-bottom:10px;">Métricas objetivo</h4>
+      <p style="color:#aaa; font-size:14px;">CPA objetivo: $60–$100 (para mantener ROAS 4–6x con precio $400–$600). CPC esperado: $1–$2.50 en home decor USA.</p>
+    </div>
+    <div class="card">
+      <h4 style="color:#C4882A; margin-bottom:10px;">Estructura de creative testing</h4>
+      <p style="color:#aaa; font-size:14px;">3 ad sets × 3 creativos = 9 ads en testing. Un ganador escala. No tocar las primeras 72h.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- LA TIENDA -->
+  <div class="section-title">La Tienda</div>
+  <div class="section-heading">One-product store separada de TSF — por qué es la jugada correcta</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">✅ Ventajas de tienda separada</h3>
+      <div class="product-feature">
+        <div class="pf-icon">🎯</div>
+        <div class="pf-text"><strong>Foco total en conversión</strong>Todo el tráfico tiene un solo objetivo: comprar la silla. Sin distracciones.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">🧠</div>
+        <div class="pf-text"><strong>Marca propia</strong>Podés crear una identidad alrededor del producto: "The Butterfly Co." o similar.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">💰</div>
+        <div class="pf-text"><strong>Pixel limpio</strong>No contaminás el pixel de TSF con eventos de muebles — audiencias separadas, datos limpios.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">📦</div>
+        <div class="pf-text"><strong>Fácil de escalar o vender</strong>Un negocio chico bien construido se puede vender en Flippa por 2–3x revenue anual.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">🏗️ Stack tecnológico sugerido</h3>
+      <div class="product-feature">
+        <div class="pf-icon">🛒</div>
+        <div class="pf-text"><strong>Shopify ($39/mes)</strong>One-product store, checkout optimizado, integración Meta Pixel nativa</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">📧</div>
+        <div class="pf-text"><strong>Klaviyo (free hasta 250 contactos)</strong>Abandoned cart flow, post-purchase, winback — en muebles el email recupera 15–25% de ATC</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">📷</div>
+        <div class="pf-text"><strong>Loox o Judge.me</strong>Reviews con fotos — crítico para un producto de $500. Social proof visual.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">💳</div>
+        <div class="pf-text"><strong>Shop Pay + Affirm</strong>Financiamiento en cuotas — reduce fricción en compras $400+. Aumenta CR un 20–30%.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <h3 style="color:#fff; margin-bottom:16px;">🖥️ Estructura de la landing page</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Hero — La silla en ambiente ideal (foto profesional)</h4>
+        <p>Headline que dice el diferencial: "Original Leather Butterfly Chair — Handcrafted in Argentina since 1938". CTA "Shop Now" visible sin scroll.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Selector de colores + precio claro</h4>
+        <p>Negro / Cognac (tan). Precio $XXX con "Free shipping to USA" en verde. Reviews count arriba del fold.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Story section — La historia del diseño</h4>
+        <p>"Diseñada en Buenos Aires en 1938 por arquitectos que querían crear la silla perfecta para el hogar moderno." Esto justifica el precio y crea conexión emocional.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Sección de materiales (close-ups del cuero)</h4>
+        <p>Cuero vacuno genuino / Costura a mano / Hierro negro de alta resistencia. Fotos que se puedan hacer zoom.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>UGC / Reviews con fotos</h4>
+        <p>Mínimo 10 reviews con foto de la silla en el hogar del cliente. Es lo que más convierte en furniture.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <h4>FAQ + Garantía</h4>
+        <p>"¿Cuánto tarda en llegar?" / "¿Cómo armo la silla?" / "¿Es cuero real?" + Garantía 30 días. Elimina objeciones.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FINANZAS -->
+  <div class="section-title">Proyección Financiera</div>
+  <div class="section-heading">Los números — con $80/día en ads</div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">Caso conservador</h3>
+      <div class="fin-row"><span class="fin-label">Precio de venta</span><span class="fin-value">$480</span></div>
+      <div class="fin-row"><span class="fin-label">Costo del producto</span><span class="fin-value orange">-$180</span></div>
+      <div class="fin-row"><span class="fin-label">Shipping a USA (est.)</span><span class="fin-value orange">-$60</span></div>
+      <div class="fin-row"><span class="fin-label">Costo de adquisición (CPA $120)</span><span class="fin-value orange">-$120</span></div>
+      <div class="fin-row"><span class="fin-label">Procesador de pagos (3%)</span><span class="fin-value orange">-$14</span></div>
+      <div class="fin-highlight">
+        <div class="amount">$106</div>
+        <div class="label">Ganancia neta por venta</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="color:#fff; margin-bottom:16px;">Caso optimizado</h3>
+      <div class="fin-row"><span class="fin-label">Precio de venta</span><span class="fin-value">$560</span></div>
+      <div class="fin-row"><span class="fin-label">Costo del producto</span><span class="fin-value orange">-$180</span></div>
+      <div class="fin-row"><span class="fin-label">Shipping a USA (est.)</span><span class="fin-value orange">-$60</span></div>
+      <div class="fin-row"><span class="fin-label">Costo de adquisición (CPA $80)</span><span class="fin-value orange">-$80</span></div>
+      <div class="fin-row"><span class="fin-label">Procesador de pagos (3%)</span><span class="fin-value orange">-$16</span></div>
+      <div class="fin-highlight">
+        <div class="amount">$224</div>
+        <div class="label">Ganancia neta por venta</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <h3 style="color:#fff; margin-bottom:16px;">📊 Proyección mensual con $80/día ($2,400/mes en ads)</h3>
+    <div class="fin-row">
+      <span class="fin-label">Ventas estimadas a CPA $100 (conservador)</span>
+      <span class="fin-value">~24 ventas/mes</span>
+    </div>
+    <div class="fin-row">
+      <span class="fin-label">Revenue bruto</span>
+      <span class="fin-value">~$11,520/mes</span>
+    </div>
+    <div class="fin-row">
+      <span class="fin-label">Ganancia neta estimada</span>
+      <span class="fin-value green">~$2,500–$5,000/mes</span>
+    </div>
+    <div class="fin-row">
+      <span class="fin-label">ROAS mínimo para breakeven</span>
+      <span class="fin-value">2.4x</span>
+    </div>
+    <div class="fin-row">
+      <span class="fin-label">ROAS objetivo</span>
+      <span class="fin-value green">4–6x (benchmark furniture en Meta)</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- LOGÍSTICA CRÍTICA -->
+  <div class="section-title">Logística</div>
+  <div class="section-heading">El punto crítico que define si esto escala o no</div>
+
+  <div class="warning-box">
+    <strong>⚠️ El shipping es el mayor risk de este negocio.</strong> Si las sillas vienen de Argentina cada vez, el costo es alto y el lead time largo. La solución es tener stock en USA (3PL warehouse) o trabajar con un proveedor que ya esté en USA. Big BKF lo hace con FedEx 2 días — eso es porque tienen stock pre-posicionado o logística aérea express.
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3 style="color:#C4882A; margin-bottom:14px;">Opción A: Stock en USA (3PL)</h3>
+      <div class="product-feature">
+        <div class="pf-icon">✅</div>
+        <div class="pf-text"><strong>Ventaja</strong>Envío en 3–5 días, costo $15–$30/unit, expectativa del cliente cumplida</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">⚠️</div>
+        <div class="pf-text"><strong>Riesgo</strong>Capital inmovilizado en stock. Hay que importar 20–50 unidades primero.</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="color:#C4882A; margin-bottom:14px;">Opción B: Ship-on-demand desde Argentina</h3>
+      <div class="product-feature">
+        <div class="pf-icon">✅</div>
+        <div class="pf-text"><strong>Ventaja</strong>Sin riesgo de stock. Capital 0 inmovilizado. Probás primero.</div>
+      </div>
+      <div class="product-feature">
+        <div class="pf-icon">⚠️</div>
+        <div class="pf-text"><strong>Riesgo</strong>Shipping $60–$100/unidad (FedEx international), tiempo 3–7 días, aduana variable.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- VERDICT -->
+  <div class="verdict">
+    <h3>✅ Veredicto: Producto viable, nicho real, ejecutable</h3>
+    <p style="margin-bottom:16px;">El mercado existe, el gap de precio existe, y Meta Ads funciona muy bien para furniture. El mayor riesgo no es el producto — es la logística. Antes de invertir en ads, definir el modelo de fulfillment. Si tenés acceso al proveedor en Argentina con envío express, el negocio es rentable desde el día 1.</p>
+    <p><strong style="color:#4ade80;">Paso siguiente:</strong> Definir precio de compra real + costo de envío a USA → calcular margen exacto → armar tienda Shopify → lanzar $50/día en Advantage+ Shopping con 3 creativos de lifestyle.</p>
+  </div>
+
+  <!-- TAGS -->
+  <div style="margin-top:30px;">
+    <div class="tags">
+      <span class="tag">BKF Butterfly Chair</span>
+      <span class="tag">Cuero genuino</span>
+      <span class="tag">One-product store</span>
+      <span class="tag">Meta Ads furniture</span>
+      <span class="tag">USA market</span>
+      <span class="tag">Shopify</span>
+      <span class="tag">MCM design</span>
+      <span class="tag">$400–$600 price point</span>
+      <span class="tag">Argentina origin</span>
+      <span class="tag">ROAS 4–6x</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Análisis generado por Algoritmia · lucagazze1@gmail.com · Mayo 2026<br>
+  Este documento es confidencial y de uso interno.
+</div>
+
+</body>
+</html>
