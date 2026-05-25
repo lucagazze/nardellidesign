@@ -60,8 +60,8 @@
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-  @media (max-width: 1100px) { .grid-5 { grid-template-columns: repeat(3, 1fr); } }
+  .grid-5 { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  /* grid-5 uses auto-fill minmax — responsive by default */
   @media (max-width: 900px) { .grid-3, .grid-5 { grid-template-columns: 1fr 1fr; } .adset-row { grid-template-columns: 1fr; } }
   @media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } .do-dont { grid-template-columns: 1fr; } }
   @media (max-width: 600px) {
@@ -144,6 +144,14 @@
   .tl-title { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
   .tl-desc { font-size: 13px; color: #94856e; }
 
+
+  .ig-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .ig-name { font-size: 15px; font-weight: 800; color: var(--text); }
+  .ig-handle a { color: var(--accent); text-decoration: none; font-size: 12px; }
+  .ig-handle a:hover { text-decoration: underline; }
+  .ig-followers { font-size: 28px; font-weight: 800; color: var(--accent); }
+  .ig-flabel { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .ig-note { font-size: 12px; color: #7a6a55; line-height: 1.5; }
   .warn-box { background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.25); border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #c4a870; }
   .warn-box strong { color: var(--warn); }
 
@@ -173,7 +181,8 @@
   <a href="#competidores">🏆 Competidores</a>
   <a href="#anillos">🎬 Los 5 Anillos</a>
   <a href="#hooks">🪝 Hooks</a>
-  <a href="#campana">⚙️ Campaña</a>
+  <a href="#instagram">📸 Instagram</a>
+  <a href="#campana">⚙️ Ads</a>
   <a href="#finanzas">💰 Finanzas</a>
   <a href="#plan">🗓️ Plan</a>
 </nav>
@@ -456,80 +465,100 @@
 
 <div class="divider"></div>
 
-<!-- ═══════ CAMPAÑA ═══════ -->
-<section id="campana">
-  <div class="section-title"><span>⚙️</span> Estructura de Campaña Meta Ads</div>
-  <div class="section-sub">Cómo arrancar — simple y probado</div>
+<!-- ═══════ INSTAGRAM ═══════ -->
+<section id="instagram">
+  <div class="section-title"><span>📸</span> Instagram de los Competidores</div>
+  <div class="section-sub">Para espiar contenido y referencias — qué funciona en el nicho</div>
 
-  <div class="camp-block">
-    <div class="camp-header">
-      <span style="font-size:18px;">❄️</span>
-      <h3>Campaña 1 — Prospección Fría</h3>
-      <span class="budget">$50–70/día</span>
-    </div>
-    <div class="camp-body">
-      <div class="adset-row">
-        <div>
-          <div class="adset-name">Advantage+ Shopping</div>
-          <div class="adset-pain">Dejar que Meta optimice audiencia</div>
-        </div>
-        <div class="creative-list">
-          <span class="cp-ring r1">Ring 1 — UGC lifestyle</span>
-          <span class="cp-ring r2">Ring 2 — Close-up cuero</span>
-          <span class="cp-ring r5">Ring 5 — Features estático</span>
-        </div>
-      </div>
-      <div class="adset-row">
-        <div>
-          <div class="adset-name">Intereses manuales</div>
-          <div class="adset-pain">Interior design · MCM furniture · Leather goods</div>
-        </div>
-        <div class="creative-list">
-          <span class="cp-ring r1">Ring 1 — UGC aspiracional</span>
-          <span class="cp-ring r2">Ring 2 — Demo sensorial</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="grid-3" style="margin-bottom:20px;">
 
-  <div class="camp-block">
-    <div class="camp-header" style="background:linear-gradient(90deg, rgba(74,222,128,0.08), transparent);">
-      <span style="font-size:18px;">🔁</span>
-      <h3>Campaña 2 — Retargeting</h3>
-      <span class="budget" style="color:#fb923c;background:rgba(251,146,60,0.1);border-color:rgba(251,146,60,0.2);">$15–20/día</span>
-    </div>
-    <div class="camp-body">
-      <div class="adset-row">
-        <div>
-          <div class="adset-name">Visitaron la web</div>
-          <div class="adset-pain">Últimos 30 días, no compraron</div>
-        </div>
-        <div class="creative-list">
-          <span class="cp-ring r3">Ring 3 — Testimonial</span>
-          <span class="cp-ring r4">Ring 4 — Oferta directa</span>
-        </div>
+    <div class="ig-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="ig-name">Big BKF Buenos Aires</div><div class="ig-handle"><a href="https://www.instagram.com/bigbkfbuenosaires/" target="_blank">@bigbkfbuenosaires ↗</a></div></div>
+        <span class="tag tag-gold">Activo</span>
       </div>
+      <div><div class="ig-followers">13K</div><div class="ig-flabel">Seguidores</div></div>
+      <div class="ig-note">El referente directo. Fotos en ambiente real, historia de la marca argentina. <strong style="color:var(--text);">Mirar su contenido de cerca</strong> — es el competidor más parecido a lo que vamos a hacer.</div>
     </div>
-  </div>
 
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;">
-    <div class="card" style="text-align:center;">
-      <div style="font-size:24px;font-weight:800;color:var(--accent);">$85</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">CPA objetivo</div>
-      <div style="font-size:12px;color:#94856e;margin-top:4px;">$115 de margen neto/venta</div>
+    <div class="ig-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="ig-name">Classy Leather Bags</div><div class="ig-handle"><a href="https://www.instagram.com/classyleatherbag/" target="_blank">@classyleatherbag ↗</a></div></div>
+        <span class="tag tag-gold">Activo</span>
+      </div>
+      <div><div class="ig-followers">20K</div><div class="ig-flabel">Seguidores</div></div>
+      <div class="ig-note">Los más activos del nicho. 1,018 posts, mezclan bolsos + sillas. <strong style="color:var(--text);">Buena referencia de formatos</strong> que funcionan en IG para cuero.</div>
     </div>
-    <div class="card" style="text-align:center;">
-      <div style="font-size:24px;font-weight:800;color:var(--warn);">5.9x</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">ROAS objetivo</div>
-      <div style="font-size:12px;color:#94856e;margin-top:4px;">Breakeven: 2.5x</div>
+
+    <div class="ig-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="ig-name">Hilason</div><div class="ig-handle"><a href="https://www.instagram.com/hilason_saddles/" target="_blank">@hilason_saddles ↗</a></div></div>
+        <span class="tag tag-muted">Fuera del nicho</span>
+      </div>
+      <div><div class="ig-followers">1.5K</div><div class="ig-flabel">Seguidores</div></div>
+      <div class="ig-note">Su foco es monturas ecuestres. Las butterfly chairs son secundarias para ellos. <strong style="color:var(--text);">No compiten en home decor.</strong></div>
     </div>
-    <div class="card" style="text-align:center;">
-      <div style="font-size:24px;font-weight:800;color:var(--win);">3–5</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;">Creativos activos</div>
-      <div style="font-size:12px;color:#94856e;margin-top:4px;">Uno por anillo como mínimo</div>
+
+    <div class="ig-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="ig-name">Saint Stag</div><div class="ig-handle"><a href="https://www.instagram.com/saintstag_/" target="_blank">@saintstag_ ↗</a></div></div>
+        <span class="tag tag-muted">Moderado</span>
+      </div>
+      <div><div class="ig-followers">n/d</div><div class="ig-flabel">Seguidores</div></div>
+      <div class="ig-note">Presencia en Amazon (reviews activos) + web propia. Varios estilos cowhide con buen SEO. Foco India/global.</div>
     </div>
+
+    <div class="ig-card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+        <div><div class="ig-name">Parrys Leather World</div><div class="ig-handle"><a href="https://www.instagram.com/parrysleatherworld/" target="_blank">@parrysleatherworld ↗</a></div></div>
+        <span class="tag tag-muted">Poco activo</span>
+      </div>
+      <div><div class="ig-followers">n/d</div><div class="ig-flabel">Seguidores</div></div>
+      <div class="ig-note">Etsy + eBay + web. Sin consistencia en social. <strong style="color:var(--text);">Su canal es SEO y marketplaces</strong>, no redes.</div>
+    </div>
+
+    <div class="ig-card" style="background:rgba(196,136,42,0.04);border-color:rgba(196,136,42,0.2);">
+      <div class="ig-name" style="color:var(--accent);">Conclusión</div>
+      <div class="ig-note" style="font-size:13px;color:#c4a870;line-height:1.7;">El nicho está casi vacío en Instagram. Big BKF (13K) y Classy Leather Bags (20K) son los únicos con presencia real. Con contenido consistente podemos construir autoridad en 6 meses y usarlo como social proof para los ads.</div>
+    </div>
+
   </div>
 </section>
+
+<div class="divider"></div>
+
+<!-- ═══════ CAMPAÑA ═══════ -->
+<section id="campana">
+  <div class="section-title"><span>⚙️</span> Meta Ads — Métricas Objetivo</div>
+  <div class="section-sub">Los números que guían la campaña</div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;">
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;font-weight:800;color:var(--accent);">$85</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">CPA objetivo</div>
+      <div style="font-size:12px;color:#94856e;">$115 de margen neto/venta</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;font-weight:800;color:var(--warn);">5.9x</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">ROAS objetivo</div>
+      <div style="font-size:12px;color:#94856e;">Breakeven: 2.5x</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;font-weight:800;color:var(--win);">3–5</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Creativos activos</div>
+      <div style="font-size:12px;color:#94856e;">Uno por anillo como mínimo</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;font-weight:800;color:#60a5fa;">$70</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Budget diario</div>
+      <div style="font-size:12px;color:#94856e;">$2,100/mes para arrancar</div>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div style="font-size:32px;font-weight:800;color:#a78bfa;">7–10</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">Días mínimos</div>
+      <div style="font-size:12px;color:#94856e;">Antes de sacar conclusiones</div>
+    </div>
+  </div>
 
 <div class="divider"></div>
 
